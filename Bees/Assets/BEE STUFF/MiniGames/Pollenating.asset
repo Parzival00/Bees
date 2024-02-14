@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457d49e9f08226b4687c2d173813ea35, type: 3}
+  m_Name: Pollenating
+  m_EditorClassIdentifier: 
+  MiniGameName: pollenation
+  MiniGameTime: 160
+  MiniGameDescription: Collect Pollen as quickly as you can from the flowers, and
+    dont forget to keep an eye on your pollen meter. when it's full that means you
+    need to carry it back to the hive.
+  miniGameScores:
+  - MetricScore: 0
+    MetricName: Flowers Pollenated
+  - MetricScore: 0
+    MetricName: Pollen Delivered to the Hive
+  CappedCellsPercentage: 20
+  HoneyCellsPercentage: 20
+  SetUpSpawner: {fileID: 0}
+  GameScene: Garden
