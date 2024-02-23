@@ -36,9 +36,11 @@ public class HiveCell : MonoBehaviour
     }
     public void NewCellState(CellState cellState)
     {
+        Debug.Log("Setting Cell State"+ cellState);
         currCellState = cellState;
         if (currCellState == CellState.Empty)
         {
+
             cellCap.SetActive(false);
             HoneyInside.SetActive(false);
             larveInside.SetActive(false);
@@ -46,18 +48,21 @@ public class HiveCell : MonoBehaviour
         }
         else if (currCellState == CellState.HoneyInside)
         {
+
             cellCap.SetActive(false);
             HoneyInside.SetActive(true);
             larveInside.SetActive(false);
         }
         else if(currCellState == CellState.larveInside)
         {
+
             cellCap.SetActive(false);
             HoneyInside.SetActive(true);
             larveInside.SetActive(true);
         }
         else if (currCellState == CellState.Capped)
         {
+
             cellCap.SetActive(true);
             HoneyInside.SetActive(false);
             larveInside.SetActive(false);

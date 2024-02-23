@@ -23,6 +23,8 @@ public class HiveCluster : MonoBehaviour
             cell.NewCellState(CellState.Empty);
         }
 
+        Debug.Log(cappedPercent+ " percent capped cells: " + numCappedCells);
+        Debug.Log(honeyPercent + " percent honey cells: " + numHoneyCells);
         // Set cells as capped
         for (int i = 0; i < numCappedCells; i++)
         {

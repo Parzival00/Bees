@@ -32,8 +32,11 @@ public class MiniGameScriptable : ScriptableObject
     //capped cells have thier scripts destroyed to save on computational power
     //only relevant for games inside the hive
     [Header("Comb Cells Settings")]
-    public float CappedCellsPercentage = 20;
-    public float HoneyCellsPercentage = 20;
+    [Range(0f, 1f)]
+    public float CappedCellsPercentage = 0.2f; // Default value represents 20%
+
+    [Range(0f, 1f)]
+    public float HoneyCellsPercentage = 0.2f; // Default value represents 20%
 
 
     [Header("Set Up information")]
