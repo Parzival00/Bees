@@ -15,6 +15,5 @@ public class BeeGame_Grab : MonoBehaviour
     }
     public void On_SelectExited()
     {
-        being_Held = false;
     }
 }

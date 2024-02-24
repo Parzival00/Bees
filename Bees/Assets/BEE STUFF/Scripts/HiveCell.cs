@@ -14,8 +14,9 @@ public class HiveCell : MonoBehaviour
     public GameObject HoneyInside;
     public GameObject larveInside;
 
-    public GameObject HoneyPickUP;
 
+
+    public List<BeeGame_Grab> HoneySpawns;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -25,30 +26,37 @@ public class HiveCell : MonoBehaviour
             Debug.Log("Collision detected");
             if(InputItem.being_Held)
             {
+                if(HoneySpawns.Contains(InputItem)){
+                    HoneySpawns.Remove(InputItem);
+                    if(HoneySpawns.Count <= 0)
+                    {
+                        ItemEnteredIntoCombCell();
+                    }
+                }
                 ItemEnteredIntoCombCell(InputItem);
             }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        XRDirectInteractor hand = other.gameObject.GetComponent<XRDirectInteractor>();
-        if (hand != null)
-        {
-            ItemEnteredIntoCombCell();
-        }
-    }
+
     public void ItemEnteredIntoCombCell(BeeGame_Grab item =null)
     {
-        //if player is empty handed, and state is Honey Inside, put honey in player's hand
-        if (currCellState == CellState.HoneyInside && item == null)
+        if(item == null)
         {
-            Instantiate(HoneyPickUP, transform.position , Quaternion.identity);
             NewCellState(CellState.Empty);
         }
 
-        else if (currCellState == CellState.HoneyInside && item.item_Name == GrabNames.Larvae)
+        if (currCellState == CellState.HoneyInside && item.item_Name == GrabNames.Larvae)
         {
+           
+            // Iterate over the list and destroy associated game objects
+            foreach (BeeGame_Grab honey in HoneySpawns)
+            {
+                Destroy(honey.gameObject);
+            }
+
+            // Clear the list of HoneySpawns
+            HoneySpawns.Clear();
             Destroy(item.gameObject);
             NewCellState(CellState.larveInside);
         }

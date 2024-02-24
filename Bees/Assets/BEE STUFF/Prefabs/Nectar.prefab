@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2535122990297729666}
   - component: {fileID: 1084533777490478864}
   m_Layer: 0
-  m_Name: Honey
+  m_Name: Nectar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249234453845872515}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.01}
-  m_LocalScale: {x: 0.0034593, y: 0.0034593006, z: 0.0034593006}
+  m_LocalPosition: {x: 0.42, y: 2.517, z: -2.07}
+  m_LocalScale: {x: 0.43431, y: 0.43431, z: 0.43431}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 16fc423adef198e499fbd9833e4b09ce, type: 2}
+  - {fileID: 2100000, guid: 24267a8ed87b66343810bd95683f2995, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -323,6 +323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f630d4e0cfa9a22419456605ee5d25ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item_Name: 4
+  item_Name: 1
   miniGamesUsed: []
   being_Held: 0
