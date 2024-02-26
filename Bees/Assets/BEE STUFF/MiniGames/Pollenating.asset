@@ -22,7 +22,7 @@ MonoBehaviour:
     MetricName: Flowers Pollenated
   - MetricScore: 0
     MetricName: Pollen Delivered to the Hive
-  CappedCellsPercentage: 20
-  HoneyCellsPercentage: 20
+  CappedCellsPercentage: 0.486
+  HoneyCellsPercentage: 0.253
   SetUpSpawner: {fileID: 0}
   GameScene: Garden
