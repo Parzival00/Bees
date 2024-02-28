@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 457d49e9f08226b4687c2d173813ea35, type: 3}
-  m_Name: Pollenating
+  m_Name: 1 Pollenation
   m_EditorClassIdentifier: 
   MiniGameName: pollenation
-  MiniGameTime: 160
-  tutorialWindowTime: 40
+  MiniGameTime: 300
+  tutorialWindowTime: 20
   MiniGameDescription: Collect Pollen as quickly as you can from the flowers, and
     dont forget to keep an eye on your pollen meter. when it's full that means you
     need to carry it back to the hive.

@@ -10,17 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 457d49e9f08226b4687c2d173813ea35, type: 3}
-  m_Name: HoneyMaking
+  m_Name: 0 Main Menu
   m_EditorClassIdentifier: 
-  MiniGameName: Honey Making
-  MiniGameTime: 160
-  tutorialWindowTime: 40
-  MiniGameDescription: Take the Nectar from the worker bees and put it into the honey
-    comb to make honey
-  miniGameScores:
-  - MetricScore: 0
-    metricName: 3
-  CappedCellsPercentage: 1
-  HoneyCellsPercentage: 1
+  MiniGameName: Main Menu
+  MiniGameTime: 0
+  tutorialWindowTime: 20
+  MiniGameDescription: Stuff About Bees
+  miniGameScores: []
+  CappedCellsPercentage: 0.518
+  HoneyCellsPercentage: 0.249
   SetUpSpawner: {fileID: 0}
-  GameScene: 
+  GameScene: Main Menu Scene

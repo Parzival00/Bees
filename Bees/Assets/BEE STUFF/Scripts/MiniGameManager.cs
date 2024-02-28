@@ -19,8 +19,8 @@ public class MiniGameManager : MonoBehaviour
     private List<GameObject> miniGameSpawns = new List<GameObject>();
     public bool playStarted;
     private bool sceneLoaded = false;
-    private float tutWindowCounter = 0;
-    private float miniGameCounter = 0;
+    public float tutWindowCounter = 0;
+    public float miniGameCounter = 0;
 
     private void Awake()
     {
@@ -38,7 +38,7 @@ public class MiniGameManager : MonoBehaviour
     private void Start()
     {
         allClusters = FindObjectsOfType<HiveCluster>();
-
+        playerUIManager = FindObjectOfType<PlayerUIManager>();
         currentMiniGame = allMiniGames[0];
         StartCoroutine(LoadSceneAndDisplayInfo());
 
@@ -49,7 +49,7 @@ public class MiniGameManager : MonoBehaviour
     {
         if (tutWindowCounter <= currentMiniGame.tutorialWindowTime)
         {
-            tutWindowCounter++;
+            tutWindowCounter+= Time.deltaTime;
             playerUIManager.closeTutrialButton.interactable = false;
         }
         else if (!playStarted)
@@ -58,7 +58,7 @@ public class MiniGameManager : MonoBehaviour
         }
         else
         {
-            miniGameCounter++;
+            miniGameCounter+=Time.deltaTime;
             if (miniGameCounter >= currentMiniGame.MiniGameTime)
             {
                 NextMiniGame();
@@ -68,6 +68,8 @@ public class MiniGameManager : MonoBehaviour
 
     private void NextMiniGame()
     {
+        miniGameCounter = 0;
+        tutWindowCounter = 0;
         currentMiniGame.SaveMiniGameMetrics();
         miniGameIndex++;
         if (miniGameIndex >= allMiniGames.Length) { miniGameIndex = 0; }
@@ -84,7 +86,8 @@ public class MiniGameManager : MonoBehaviour
 
         yield return new WaitUntil(() => sceneLoaded);
 
-
+                miniGameCounter = 0;
+        tutWindowCounter = 0;
         // Get all clusters again as they might have changed after scene load
         allClusters = FindObjectsOfType<HiveCluster>();
 
