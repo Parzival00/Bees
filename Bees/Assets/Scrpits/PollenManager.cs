@@ -6,6 +6,7 @@ using TMPro;
 public class PollenManager : MonoBehaviour
 {
     public Transform playerCamera;
+    public Transform player;
     public Pollen playerPollen;
 
     private float detectDistance = 10;
@@ -44,7 +45,7 @@ public class PollenManager : MonoBehaviour
     {
         foreach (GameObject f in Flowers)
         {
-            float flowerDistance = Vector3.Distance(transform.position, f.transform.position);
+            float flowerDistance = Vector3.Distance(player.position, f.transform.position);
             if (flowerDistance <= detectDistance)
             {
                 currentFlower = f;

@@ -25,4 +25,4 @@ MonoBehaviour:
   CappedCellsPercentage: 0.486
   HoneyCellsPercentage: 0.253
   SetUpSpawner: {fileID: 0}
-  GameScene: Garden
+  GameScene: Pollinating Game
