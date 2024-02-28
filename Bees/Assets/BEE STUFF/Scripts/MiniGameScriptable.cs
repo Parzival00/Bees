@@ -9,9 +9,19 @@ using UnityEngine;
 public class GameMetrics
 {
     public float MetricScore;
-    public string MetricName;
+    public MetricName metricName;
 }
-
+public enum MetricName 
+{
+    PollenCollected,//pollenation minigame
+    PollenDelivered, //pollenationminigame
+    FlowersPollenated, //pollention mini game
+    HoneyCellsCreated, //nectar mini game
+    LarvaeCellsCreated,//nursery mini game
+    LarvaeCellsCapped,//nursery mini game
+    HoneyEaten, //birth mini game
+    EnemiesDefeated,//Hive Defense mini game
+}
 
 //HINT: to create a new mini game asset, go in the MiniGames Folder in BEE STUFF and right click,
 //go to the top and find Scriptable Objects -> Mini Game Scriptable, and put in what ever info you need to do
@@ -47,12 +57,12 @@ public class MiniGameScriptable : ScriptableObject
 
 
     //Call in MiniGame Manager when score should be increased
-    public void IncreaseScore(string scoreName, float increase)
+    public void IncreaseScore(MetricName scoreName, float increase)
     {
         increase = Mathf.Abs(increase);
         foreach(GameMetrics metric in miniGameScores)
         {
-            if (metric.MetricName == scoreName)
+            if (metric.metricName == scoreName)
             {
                 metric.MetricScore += increase;
 
@@ -65,13 +75,13 @@ public class MiniGameScriptable : ScriptableObject
 
 
     //Call in MiniGame Manager when score should be decreased
-    public void DecreaseScore(string scoreName, float decrease)
+    public void DecreaseScore(MetricName scoreName, float decrease)
     {
         decrease = Mathf.Abs(decrease);
 
         foreach (GameMetrics metric in miniGameScores)
         {
-            if (metric.MetricName == scoreName)
+            if (metric.metricName == scoreName)
             {
                 metric.MetricScore -= decrease;
 
@@ -90,7 +100,7 @@ public class MiniGameScriptable : ScriptableObject
         foreach (GameMetrics metric in miniGameScores)
         {
             // Save the player's scores in player prefs
-            PlayerPrefs.SetFloat(metric.MetricName, metric.MetricScore);
+            PlayerPrefs.SetFloat(metric.metricName.ToString(), metric.MetricScore);
         }
 
         // Save PlayerPrefs to disk

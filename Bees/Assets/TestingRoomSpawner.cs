@@ -9,11 +9,11 @@ public class TestingRoomSpawner : MonoBehaviour
 
     public void SpawnLarva()
     {
-        MiniGameManager.instance.SpawnMiniGameActors(larva, spawnSpot);
+        Instantiate(larva, spawnSpot.position, Quaternion.identity);
     }
 
     public void SpawnNectar()
     {
-        MiniGameManager.instance.SpawnMiniGameActors(Nectar, spawnSpot);
+        Instantiate(Nectar, spawnSpot.position, Quaternion.identity);
     }
 }

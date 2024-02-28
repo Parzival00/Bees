@@ -14,14 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MiniGameName: Testing
   MiniGameTime: 1e+10
+  tutorialWindowTime: 40
   MiniGameDescription: test stuff
   miniGameScores:
   - MetricScore: 0
-    MetricName: Test_Capped
+    metricName: 0
   - MetricScore: 0
-    MetricName: Test_Honeyed
+    metricName: 1
   - MetricScore: 0
-    MetricName: Test_Larvea
+    metricName: 2
+  - MetricScore: 0
+    metricName: 3
+  - MetricScore: 0
+    metricName: 4
+  - MetricScore: 0
+    metricName: 5
+  - MetricScore: 0
+    metricName: 6
   CappedCellsPercentage: 0.518
   HoneyCellsPercentage: 0.249
   SetUpSpawner: {fileID: 1649913781998092759, guid: dfbae1f1ee48eb84f803ebe67e1c6c67, type: 3}

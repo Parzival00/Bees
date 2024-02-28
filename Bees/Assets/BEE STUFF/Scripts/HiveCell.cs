@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 
 public enum CellState { Empty, HoneyInside, larveInside, Capped}
-public class HiveCell : MonoBehaviour
+public class HiveCell : ScoreModifier
 {
     public CellState currCellState; 
     public GameObject cellCap;
@@ -59,6 +59,8 @@ public class HiveCell : MonoBehaviour
             HoneySpawns.Clear();
             Destroy(item.gameObject);
             NewCellState(CellState.larveInside);
+            IncreasescoreIfAplicable(MetricName.LarvaeCellsCreated, item.points);
+
         }
 
         //if player input is honey and state is LArve Inside, cap it and remove the script
@@ -67,12 +69,14 @@ public class HiveCell : MonoBehaviour
             //remove honey from player's hand
             Destroy(item.gameObject);
             NewCellState(CellState.Capped);
+            IncreasescoreIfAplicable(MetricName.LarvaeCellsCapped, item.points);
         }
 
         else if(currCellState == CellState.Empty && item.item_Name == GrabNames.Nectar)
         {
             Destroy(item.gameObject);
             NewCellState(CellState.HoneyInside);
+            IncreasescoreIfAplicable(MetricName.HoneyCellsCreated, item.points);
         }
     }
     public void NewCellState(CellState cellState)
@@ -110,4 +114,6 @@ public class HiveCell : MonoBehaviour
             Destroy(this);
         }
     }
+
+
 }

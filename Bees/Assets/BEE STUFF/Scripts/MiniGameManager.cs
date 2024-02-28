@@ -10,21 +10,17 @@ public class MiniGameManager : MonoBehaviour
     public static MiniGameManager instance;
     public PlayerUIManager playerUIManager;
 
-    protected MiniGameScriptable currentMiniGame;
+    public MiniGameScriptable currentMiniGame;
     public MiniGameScriptable[] allMiniGames;
+    private int miniGameIndex = 0;
     private HiveCluster[] allClusters;
 
 
     private List<GameObject> miniGameSpawns = new List<GameObject>();
-    public Transform hiveEntranceSpawn;
-    public Transform queenBeeSpawn;
-
-    private float tutWindowCounter = 0;
-    private float miniGameCounter = 0;
     public bool playStarted;
     private bool sceneLoaded = false;
-
-
+    private float tutWindowCounter = 0;
+    private float miniGameCounter = 0;
 
     private void Awake()
     {
@@ -48,25 +44,37 @@ public class MiniGameManager : MonoBehaviour
 
     }
 
-    ////update
+
     private void Update()
     {
-        //playerUIManager.DisplyMiniGameInfo(currentMiniGame);
-
-        //if (tutWindowCounter <= currentMiniGame.tutorialWindowTime)
-        //{
-        //    tutWindowCounter++;
-
-
-        //}
-        //else
-        //{
-
-        //    miniGameCounter++;
-        //    //ending mingame later
-        //}
-
+        if (tutWindowCounter <= currentMiniGame.tutorialWindowTime)
+        {
+            tutWindowCounter++;
+            playerUIManager.closeTutrialButton.interactable = false;
+        }
+        else if (!playStarted)
+        {
+            playerUIManager.closeTutrialButton.interactable = true;
+        }
+        else
+        {
+            miniGameCounter++;
+            if (miniGameCounter >= currentMiniGame.MiniGameTime)
+            {
+                NextMiniGame();
+            }
+        }
     }
+
+    private void NextMiniGame()
+    {
+        currentMiniGame.SaveMiniGameMetrics();
+        miniGameIndex++;
+        if (miniGameIndex >= allMiniGames.Length) { miniGameIndex = 0; }
+        currentMiniGame = allMiniGames[miniGameIndex];
+        StartCoroutine(LoadSceneAndDisplayInfo());
+    }
+
 
     private IEnumerator LoadSceneAndDisplayInfo()
     {
@@ -120,10 +128,5 @@ public class MiniGameManager : MonoBehaviour
     }
 
 
-    //called by the spawners for the miniGame
-    public void SpawnMiniGameActors(GameObject spawn, Transform locationSpawn)
-    {
-        miniGameSpawns.Add( Instantiate(spawn,locationSpawn.position,Quaternion.identity));
-    }
 
 }

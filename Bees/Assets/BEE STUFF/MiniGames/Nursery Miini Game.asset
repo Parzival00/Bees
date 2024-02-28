@@ -10,22 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 457d49e9f08226b4687c2d173813ea35, type: 3}
-  m_Name: Pollenating
+  m_Name: Nursery Miini Game
   m_EditorClassIdentifier: 
-  MiniGameName: pollenation
+  MiniGameName: Nursery
   MiniGameTime: 160
   tutorialWindowTime: 40
-  MiniGameDescription: Collect Pollen as quickly as you can from the flowers, and
-    dont forget to keep an eye on your pollen meter. when it's full that means you
-    need to carry it back to the hive.
+  MiniGameDescription: Take the Nectar from the worker bees and put it into the honey
+    comb to make honey
   miniGameScores:
   - MetricScore: 0
-    metricName: 0
+    metricName: 4
   - MetricScore: 0
-    metricName: 1
-  - MetricScore: 0
-    metricName: 2
-  CappedCellsPercentage: 0.486
-  HoneyCellsPercentage: 0.253
+    metricName: 5
+  CappedCellsPercentage: 1
+  HoneyCellsPercentage: 1
   SetUpSpawner: {fileID: 0}
-  GameScene: Pollinating Game
+  GameScene: 

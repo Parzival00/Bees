@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MiniGameName: Honey Making
   MiniGameTime: 160
+  tutorialWindowTime: 40
   MiniGameDescription: Take the Nectar from the worker bees and put it into the honey
     comb to make honey
   miniGameScores:
   - MetricScore: 0
-    MetricName: Honey Cells Created
-  CappedCellsPercentage: 20
-  HoneyCellsPercentage: 20
+    metricName: 3
+  CappedCellsPercentage: 1
+  HoneyCellsPercentage: 1
   SetUpSpawner: {fileID: 0}
   GameScene: 

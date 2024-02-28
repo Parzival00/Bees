@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MiniGameName: Hive Defense
   MiniGameTime: 160
+  tutorialWindowTime: 40
   MiniGameDescription: Defend the hive from a swarm of yellowjackets
   miniGameScores:
   - MetricScore: 0
-    MetricName: Enemies defeated
-  CappedCellsPercentage: 80
-  HoneyCellsPercentage: 20
+    metricName: 6
+  CappedCellsPercentage: 1
+  HoneyCellsPercentage: 1
   SetUpSpawner: {fileID: 0}
   GameScene: 
