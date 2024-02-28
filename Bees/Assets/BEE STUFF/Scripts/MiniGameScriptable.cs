@@ -24,6 +24,7 @@ public class MiniGameScriptable : ScriptableObject
     [Header("UI Data")]
     public string MiniGameName;
     public float MiniGameTime;
+    public float tutorialWindowTime = 40;
     public string MiniGameDescription = "Collect pollen by interacting with the flowers in the garden until your pollen meter is full";
     public GameMetrics[] miniGameScores; // some mingames may have more than one metic to track.
 

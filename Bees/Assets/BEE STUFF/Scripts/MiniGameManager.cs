@@ -6,15 +6,21 @@ using System.Threading.Tasks;
 
 public class MiniGameManager : MonoBehaviour
 {
+    public static MiniGameManager instance;
+    public PlayerUIManager playerUIManager;
+
     protected MiniGameScriptable currentMiniGame;
     public MiniGameScriptable[] allMiniGames;
     private HiveCluster[] allClusters;
 
-    public static MiniGameManager instance;
+
     private List<GameObject> miniGameSpawns = new List<GameObject>();
     public Transform hiveEntranceSpawn;
     public Transform queenBeeSpawn;
 
+    private float tutWindowCounter = 0;
+    private float miniGameCounter = 0;
+    public bool playStarted;
 
 
 
@@ -34,12 +40,30 @@ public class MiniGameManager : MonoBehaviour
     private void Start()
     {
         allClusters = FindObjectsOfType<HiveCluster>();
+        playerUIManager = FindObjectOfType<PlayerUIManager>();
         currentMiniGame = allMiniGames[0];
         StartMiniGame();
 
     }
 
+    //update
+    //private void Update()
+    //{
 
+    //    if(tutWindowCounter <= currentMiniGame.tutorialWindowTime)
+    //    {
+    //        tutWindowCounter++;
+    //        PlayerUIManager.Instance.closeTutrialButton.interactable = false;
+    //    }
+    //    else
+    //    {
+    //        PlayerUIManager.Instance.closeTutrialButton.interactable = true;
+    //        miniGameCounter++;
+    //        //ending mingame later
+    //    }
+
+
+    //}
     //Called at the begining of every minigame to set it up
     public async void StartMiniGame()
     {
@@ -71,11 +95,15 @@ public class MiniGameManager : MonoBehaviour
             }
         }
 
+        //add pollen logic here
+
         // Instantiates the spawner for this miniGame
         if (currentMiniGame.SetUpSpawner != null)
         {
             miniGameSpawns.Add(Instantiate(currentMiniGame.SetUpSpawner));
         }
+
+        playerUIManager.DisplyMiniGameInfo(currentMiniGame);
     }
 
 
