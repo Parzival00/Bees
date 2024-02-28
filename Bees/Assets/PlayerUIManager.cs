@@ -8,7 +8,8 @@ public class PlayerUIManager : MonoBehaviour
 {
 
     [Header("Pop up for instructions")]
-    public TMP_Text miniGameName, minGameDesc;
+    public TMP_Text miniGameName;
+    public TMP_Text minGameDesc;
     public GameObject TutorialWindow;
     public Button closeTutrialButton;
 
@@ -18,9 +19,10 @@ public class PlayerUIManager : MonoBehaviour
 
     public void DisplyMiniGameInfo(MiniGameScriptable g)
     {
+        Debug.Log("MINI GAME UI SE UP: "+ g.MiniGameName);
         miniGameName.text = g.MiniGameName;
         minGameDesc.text = g.MiniGameDescription;
-       // TutorialWindow.SetActive(true);
+
     }
 
     public void HideTutorialWindow()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
+using Oculus.Interaction.Samples;
 
 public class MiniGameManager : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class MiniGameManager : MonoBehaviour
     private float tutWindowCounter = 0;
     private float miniGameCounter = 0;
     public bool playStarted;
+    private bool sceneLoaded = false;
 
 
 
@@ -40,46 +42,40 @@ public class MiniGameManager : MonoBehaviour
     private void Start()
     {
         allClusters = FindObjectsOfType<HiveCluster>();
-        playerUIManager = FindObjectOfType<PlayerUIManager>();
+
         currentMiniGame = allMiniGames[0];
-        StartMiniGame();
+        StartCoroutine(LoadSceneAndDisplayInfo());
 
     }
 
-    //update
-    //private void Update()
-    //{
+    ////update
+    private void Update()
+    {
+        //playerUIManager.DisplyMiniGameInfo(currentMiniGame);
 
-    //    if(tutWindowCounter <= currentMiniGame.tutorialWindowTime)
-    //    {
-    //        tutWindowCounter++;
-    //        PlayerUIManager.Instance.closeTutrialButton.interactable = false;
-    //    }
-    //    else
-    //    {
-    //        PlayerUIManager.Instance.closeTutrialButton.interactable = true;
-    //        miniGameCounter++;
-    //        //ending mingame later
-    //    }
+        //if (tutWindowCounter <= currentMiniGame.tutorialWindowTime)
+        //{
+        //    tutWindowCounter++;
 
 
-    //}
-    //Called at the begining of every minigame to set it up
-    public async void StartMiniGame()
+        //}
+        //else
+        //{
+
+        //    miniGameCounter++;
+        //    //ending mingame later
+        //}
+
+    }
+
+    private IEnumerator LoadSceneAndDisplayInfo()
     {
         currentMiniGame.ResetScores();
 
-        // Use a TaskCompletionSource to await scene loading
-        var sceneLoadTask = new TaskCompletionSource<bool>();
-        SceneManager.sceneLoaded += (scene, mode) => sceneLoadTask.SetResult(true);
-
         SceneManager.LoadScene(currentMiniGame.GameScene);
 
-        // Wait for the scene to finish loading
-        await sceneLoadTask.Task;
+        yield return new WaitUntil(() => sceneLoaded);
 
-        // Unsubscribe from the sceneLoaded event
-        SceneManager.sceneLoaded -= (scene, mode) => sceneLoadTask.SetResult(true);
 
         // Get all clusters again as they might have changed after scene load
         allClusters = FindObjectsOfType<HiveCluster>();
@@ -88,14 +84,13 @@ public class MiniGameManager : MonoBehaviour
         {
             cluster.SetUPCells(currentMiniGame.CappedCellsPercentage, currentMiniGame.HoneyCellsPercentage);
 
-            //if the player cannot reach this cluster and it is just for looks, remove it's functionality and collision
             if (!cluster.playerReach)
             {
                 cluster.DisableAllCells();
             }
         }
 
-        //add pollen logic here
+        // Add pollen logic here
 
         // Instantiates the spawner for this miniGame
         if (currentMiniGame.SetUpSpawner != null)
@@ -103,7 +98,25 @@ public class MiniGameManager : MonoBehaviour
             miniGameSpawns.Add(Instantiate(currentMiniGame.SetUpSpawner));
         }
 
+        // Display mini game info after scene has loaded
+        playerUIManager = FindObjectOfType<PlayerUIManager>();
         playerUIManager.DisplyMiniGameInfo(currentMiniGame);
+
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        sceneLoaded = true;
     }
 
 

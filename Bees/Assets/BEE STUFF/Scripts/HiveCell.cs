@@ -23,7 +23,7 @@ public class HiveCell : MonoBehaviour
         BeeGame_Grab InputItem = collision.gameObject.GetComponent<BeeGame_Grab>();
         if (InputItem != null)
         {
-            Debug.Log("Collision detected");
+
             if(InputItem.being_Held)
             {
                 if(HoneySpawns.Contains(InputItem)){
@@ -77,7 +77,7 @@ public class HiveCell : MonoBehaviour
     }
     public void NewCellState(CellState cellState)
     {
-        Debug.Log("Setting Cell State"+ cellState);
+
         currCellState = cellState;
         if (currCellState == CellState.Empty)
         {
