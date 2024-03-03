@@ -6,8 +6,8 @@ public enum GrabNames {Empty, Nectar, Pollen, Larvae, Honey,InsideHoney}
 public class BeeGame_Grab : ScoreModifier
 {
     public GrabNames item_Name;
-    public MiniGameScriptable[] miniGamesUsed;
     public float points = 1;
+    [HideInInspector]
     public bool being_Held;
 
 

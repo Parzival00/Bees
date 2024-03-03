@@ -60,6 +60,29 @@ public class MiniGameScriptable : ScriptableObject
     public string GameScene;
 
 
+    public float GetScore(MetricName scoreName)
+    {
+        foreach (GameMetrics metric in miniGameScores)
+        {
+            if (metric.metricName == scoreName)
+            {
+                return metric.MetricScore;
+            }
+
+        }
+        return -1;
+    }
+    public void ResetScore(MetricName scoreName)
+    {
+        foreach (GameMetrics metric in miniGameScores)
+        {
+            if (metric.metricName == scoreName)
+            {
+                metric.MetricScore=0;
+            }
+
+        }
+    }
 
     //Call in MiniGame Manager when score should be increased
     public void IncreaseScore(MetricName scoreName, float increase)

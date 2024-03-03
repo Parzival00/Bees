@@ -18,13 +18,20 @@ MonoBehaviour:
   MiniGameDescription: Collect Pollen as quickly as you can from the flowers, and
     dont forget to keep an eye on your pollen meter. when it's full that means you
     need to carry it back to the hive.
+  minGameUIBackGround: {fileID: 4938547091663013404, guid: 718b7349491018544b6e9dae6ea0c1b3, type: 3}
   miniGameScores:
   - MetricScore: 0
     metricName: 0
+    UI_prefab: {fileID: 2492632726135572166, guid: 15d6ac6522ac65044a028da2b29d97c1, type: 3}
+    Ui_Instance: {fileID: 0}
   - MetricScore: 0
     metricName: 1
+    UI_prefab: {fileID: 6354354389398005937, guid: 55b483c3987205c4090472fa3b087d6f, type: 3}
+    Ui_Instance: {fileID: 0}
   - MetricScore: 0
     metricName: 2
+    UI_prefab: {fileID: 6354354389398005937, guid: 55b483c3987205c4090472fa3b087d6f, type: 3}
+    Ui_Instance: {fileID: 0}
   CappedCellsPercentage: 0.486
   HoneyCellsPercentage: 0.253
   SetUpSpawner: {fileID: 0}

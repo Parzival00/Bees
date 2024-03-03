@@ -49,7 +49,7 @@ public class MiniGameManager : MonoBehaviour
     {
         if (tutWindowCounter <= currentMiniGame.tutorialWindowTime)
         {
-            tutWindowCounter+= Time.deltaTime;
+            tutWindowCounter += Time.deltaTime;
             playerUIManager.closeTutrialButton.interactable = false;
         }
         else if (!playStarted)
@@ -58,7 +58,7 @@ public class MiniGameManager : MonoBehaviour
         }
         else
         {
-            miniGameCounter+=Time.deltaTime;
+            miniGameCounter += Time.deltaTime;
             if (miniGameCounter >= currentMiniGame.MiniGameTime)
             {
                 NextMiniGame();

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class scoreUIManager : MonoBehaviour
 {
+
     public abstract void ChangeScore(float newScore);
 
 }

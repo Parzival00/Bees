@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+
 public class ScoreTextManager : scoreUIManager
 {
+
     TMP_Text scoreText;
     private void Awake()
     {

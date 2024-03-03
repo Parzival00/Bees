@@ -16,9 +16,12 @@ MonoBehaviour:
   MiniGameTime: 160
   tutorialWindowTime: 20
   MiniGameDescription: Defend the hive from a swarm of yellowjackets
+  minGameUIBackGround: {fileID: 4938547091663013404, guid: 718b7349491018544b6e9dae6ea0c1b3, type: 3}
   miniGameScores:
   - MetricScore: 0
-    metricName: 6
+    metricName: 7
+    UI_prefab: {fileID: 6354354389398005937, guid: 55b483c3987205c4090472fa3b087d6f, type: 3}
+    Ui_Instance: {fileID: 0}
   CappedCellsPercentage: 1
   HoneyCellsPercentage: 1
   SetUpSpawner: {fileID: 0}

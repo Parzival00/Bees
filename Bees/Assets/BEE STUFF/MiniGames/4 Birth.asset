@@ -16,11 +16,12 @@ MonoBehaviour:
   MiniGameTime: 160
   tutorialWindowTime: 20
   MiniGameDescription: Eat your way out of the honey comb Cell
+  minGameUIBackGround: {fileID: 4938547091663013404, guid: 718b7349491018544b6e9dae6ea0c1b3, type: 3}
   miniGameScores:
   - MetricScore: 0
-    metricName: 4
-  - MetricScore: 0
-    metricName: 5
+    metricName: 6
+    UI_prefab: {fileID: 2492632726135572166, guid: 15d6ac6522ac65044a028da2b29d97c1, type: 3}
+    Ui_Instance: {fileID: 0}
   CappedCellsPercentage: 1
   HoneyCellsPercentage: 1
   SetUpSpawner: {fileID: 0}
