@@ -1,15 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class ScoreSliderManager : scoreUIManager
 {
-    Slider scoreSlider;
-    private void Awake()
-    {
-        scoreSlider = GetComponentInChildren<Slider>();
-    }
+    [SerializeField]
+    private Slider scoreSlider;
+
 
 
     public override void ChangeScore(float newScore)

@@ -7,11 +7,8 @@ using UnityEngine;
 public class ScoreTextManager : scoreUIManager
 {
 
-    TMP_Text scoreText;
-    private void Awake()
-    {
-        scoreText = GetComponentInChildren<TMP_Text>();
-    }
+    [SerializeField] private TMP_Text scoreText;
+
 
 
     public override void ChangeScore(float newScore)
