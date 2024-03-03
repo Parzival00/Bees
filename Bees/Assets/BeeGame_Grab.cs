@@ -14,13 +14,27 @@ public class BeeGame_Grab : ScoreModifier
     public void ON_SelectEntered()
     {
         being_Held = true;
+        //POLLEN MINI GAME
         if(item_Name == GrabNames.Pollen)
         {
-            IncreasescoreIfAplicable(MetricName.PollenCollected,points);
+
+            //check if minigame has pollen collected score metric
+            if (IncreasescoreIfAplicable(MetricName.PollenCollected, points))
+            {
+                //if so, yeet
+                Destroy(gameObject);
+            }
         }
-        else if(item_Name == GrabNames.Honey)
+
+        //BIRTH MINIGAME
+        else if(item_Name == GrabNames.InsideHoney)
         {
-            DecreasescoreIfAplicable(MetricName.HoneyEaten,points);
+            //check if minigame has honeyeatenMetric
+            if (DecreasescoreIfAplicable(MetricName.HoneyEaten, points))
+            {
+                //if so, yeet
+                Destroy(gameObject);
+            }
         }
         
     }

@@ -4,26 +4,28 @@ using UnityEngine;
 
 public class ScoreModifier : MonoBehaviour
 {
-    protected void IncreasescoreIfAplicable(MetricName targetMetric, float pointValue)
+    protected bool IncreasescoreIfAplicable(MetricName targetMetric, float pointValue)
     {
         foreach (GameMetrics score in MiniGameManager.instance.currentMiniGame.miniGameScores)
         {
             if (score.metricName == targetMetric)
             {
                 MiniGameManager.instance.currentMiniGame.IncreaseScore(targetMetric, pointValue);
-                return;
+                return true;
             }
         }
+        return false;
     }
-    protected void DecreasescoreIfAplicable(MetricName targetMetric, float pointValue)
+    protected bool DecreasescoreIfAplicable(MetricName targetMetric, float pointValue)
     {
         foreach (GameMetrics score in MiniGameManager.instance.currentMiniGame.miniGameScores)
         {
             if (score.metricName == targetMetric)
             {
                 MiniGameManager.instance.currentMiniGame.DecreaseScore(targetMetric, pointValue);
-                return;
+                return true;
             }
         }
+        return false;
     }
 }

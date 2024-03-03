@@ -31,6 +31,10 @@ public class PlayerUIManager : MonoBehaviour
         MiniGameManager.instance.playStarted = true;
     }
 
+    public void SpawnMiniGameScores()
+    {
+
+    }
 
 
 

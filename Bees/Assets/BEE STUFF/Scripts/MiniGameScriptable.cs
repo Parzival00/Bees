@@ -10,6 +10,7 @@ public class GameMetrics
 {
     public float MetricScore;
     public MetricName metricName;
+    public GameObject UI_prefab;
 }
 public enum MetricName 
 {
