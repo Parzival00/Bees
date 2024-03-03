@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 
 [System.Serializable]
@@ -10,7 +11,9 @@ public class GameMetrics
 {
     public float MetricScore;
     public MetricName metricName;
-    public GameObject UI_prefab;
+    public scoreUIManager UI_prefab;
+    [HideInInspector]
+    public scoreUIManager Ui_Instance;
 }
 public enum MetricName 
 {
@@ -37,6 +40,7 @@ public class MiniGameScriptable : ScriptableObject
     public float MiniGameTime;
     public float tutorialWindowTime = 40;
     public string MiniGameDescription = "Collect pollen by interacting with the flowers in the garden until your pollen meter is full";
+    public GameObject minGameUIBackGround;
     public GameMetrics[] miniGameScores; // some mingames may have more than one metic to track.
 
 
@@ -66,7 +70,7 @@ public class MiniGameScriptable : ScriptableObject
             if (metric.metricName == scoreName)
             {
                 metric.MetricScore += increase;
-
+                metric.UI_prefab.ChangeScore(metric.MetricScore);
                 Debug.Log("Score Increased");
                 return;
             }
@@ -86,6 +90,7 @@ public class MiniGameScriptable : ScriptableObject
             {
                 metric.MetricScore -= decrease;
 
+                metric.UI_prefab.ChangeScore(metric.MetricScore);
                 Debug.Log("Score decreased");
                 return;
             }
@@ -119,4 +124,12 @@ public class MiniGameScriptable : ScriptableObject
 
     }
 
+
+    public void SpawnUIPrefabs(GameObject scoreBG)
+    {
+        foreach (GameMetrics metric in miniGameScores)
+        {
+            metric.Ui_Instance =Instantiate(metric.UI_prefab, scoreBG.transform).GetComponent<scoreUIManager>();
+        }
+    }
 }

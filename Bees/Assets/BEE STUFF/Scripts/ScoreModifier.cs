@@ -10,8 +10,16 @@ public class ScoreModifier : MonoBehaviour
         {
             if (score.metricName == targetMetric)
             {
-                MiniGameManager.instance.currentMiniGame.IncreaseScore(targetMetric, pointValue);
-                return true;
+                if (targetMetric == MetricName.PollenCollected && score.MetricScore >= 100)
+                {
+                    return false;
+                }
+                else
+                {
+                    MiniGameManager.instance.currentMiniGame.IncreaseScore(targetMetric, pointValue);
+
+                    return true;
+                }
             }
         }
         return false;
@@ -22,6 +30,7 @@ public class ScoreModifier : MonoBehaviour
         {
             if (score.metricName == targetMetric)
             {
+
                 MiniGameManager.instance.currentMiniGame.DecreaseScore(targetMetric, pointValue);
                 return true;
             }
