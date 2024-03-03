@@ -8,7 +8,7 @@ public class ScoreTextManager : scoreUIManager
     TMP_Text scoreText;
     private void Awake()
     {
-        scoreText = GetComponent<TMP_Text>();
+        scoreText = GetComponentInChildren<TMP_Text>();
     }
 
 

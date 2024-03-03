@@ -8,7 +8,7 @@ public class ScoreSliderManager : scoreUIManager
     Slider scoreSlider;
     private void Awake()
     {
-        scoreSlider = GetComponent<Slider>();
+        scoreSlider = GetComponentInChildren<Slider>();
     }
 
 
