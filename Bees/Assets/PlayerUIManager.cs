@@ -24,7 +24,7 @@ public class PlayerUIManager : MonoBehaviour
         minGameDesc.text = g.MiniGameDescription;
 
     }
-
+    [ContextMenu("Start Mini Game")]
     public void HideTutorialWindow()
     {
         TutorialWindow.SetActive(false);

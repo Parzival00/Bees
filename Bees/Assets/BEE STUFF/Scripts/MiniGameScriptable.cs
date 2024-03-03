@@ -153,6 +153,7 @@ public class MiniGameScriptable : ScriptableObject
         foreach (GameMetrics metric in miniGameScores)
         {
             metric.Ui_Instance =Instantiate(metric.UI_prefab, scoreBG.transform).GetComponent<scoreUIManager>();
+            metric.Ui_Instance.ChangeScore(metric.MetricScore);
         }
     }
 }
