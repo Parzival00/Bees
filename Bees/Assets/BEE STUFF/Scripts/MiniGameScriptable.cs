@@ -88,12 +88,16 @@ public class MiniGameScriptable : ScriptableObject
     public void IncreaseScore(MetricName scoreName, float increase)
     {
         increase = Mathf.Abs(increase);
+
+
+
         foreach(GameMetrics metric in miniGameScores)
         {
             if (metric.metricName == scoreName)
             {
+
                 metric.MetricScore += increase;
-                metric.UI_prefab.ChangeScore(metric.MetricScore);
+                metric.Ui_Instance.ChangeScore(metric.MetricScore);
                 Debug.Log("Score Increased");
                 return;
             }
