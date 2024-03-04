@@ -16,6 +16,12 @@ public class PlayerUIManager : MonoBehaviour
 
     [Header("Score Prefab")]
     public GameObject scoreGO;
+    public TMP_Text timer;
+
+    private void Update()
+    {
+        timer.text = (MiniGameManager.instance.currentMiniGame.MiniGameTime - MiniGameManager.instance.miniGameCounter).ToString();
+    }
 
 
     public void DisplyMiniGameInfo(MiniGameScriptable g)
