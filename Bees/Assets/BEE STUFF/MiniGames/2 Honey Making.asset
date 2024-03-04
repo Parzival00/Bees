@@ -25,5 +25,5 @@ MonoBehaviour:
     Ui_Instance: {fileID: 0}
   CappedCellsPercentage: 1
   HoneyCellsPercentage: 1
-  SetUpSpawner: {fileID: 0}
+  SetUpSpawner: {fileID: 7862956579123716056, guid: 07b7e46d503db124891d3896f6b3406b, type: 3}
   GameScene: Inside The Hive
