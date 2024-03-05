@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0 Main Menu
   m_EditorClassIdentifier: 
   MiniGameName: Main Menu
-  MiniGameTime: 0
+  MiniGameTime: 100000
   tutorialWindowTime: 20
   MiniGameDescription: Stuff About Bees
   minGameUIBackGround: {fileID: 4938547091663013404, guid: 718b7349491018544b6e9dae6ea0c1b3, type: 3}
