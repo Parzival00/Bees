@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8174488550142514918}
   - component: {fileID: 6347620824773442924}
   - component: {fileID: 6906134905434078274}
+  - component: {fileID: 1861112917449737401}
   m_Layer: 0
   m_Name: BeeHiveCluster
   m_TagString: Untagged
@@ -63,7 +64,7 @@ Transform:
   - {fileID: 3533954148355964743}
   - {fileID: 2817729261807235291}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &319463709801387377
 MeshFilter:
@@ -300,6 +301,27 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &1861112917449737401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6145756820704912258}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.048631396, y: 0.048077364, z: 0.00036191315}
+  m_Center: {x: 0, y: 1.3663544e-15, z: 0.00018095544}
 --- !u!1001 &75768339252595586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1948,8 +1970,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2674923400258612173}
     m_Modifications:
-    - target: {fileID: 694808822629180567, guid: de783c3ba7b3b2f45b1a1a64de9c7382, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 1284972972591294451, guid: de783c3ba7b3b2f45b1a1a64de9c7382, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460469255917089989, guid: de783c3ba7b3b2f45b1a1a64de9c7382, type: 3}
+      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3460469255917089989, guid: de783c3ba7b3b2f45b1a1a64de9c7382, type: 3}
@@ -1990,10 +2016,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3460469255917089989, guid: de783c3ba7b3b2f45b1a1a64de9c7382, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5981473986313963658, guid: de783c3ba7b3b2f45b1a1a64de9c7382, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7373316912195975292, guid: de783c3ba7b3b2f45b1a1a64de9c7382, type: 3}

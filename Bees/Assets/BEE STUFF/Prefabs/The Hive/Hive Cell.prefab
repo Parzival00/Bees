@@ -103,7 +103,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 0.07283713, z: 1.0298654}
   m_Center: {x: 0, y: 0.035233885, z: -0.014932686}
@@ -813,7 +813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2939f8891532e61449888e2d66d53dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currCellState: 2
+  currCellState: 0
   cellCap: {fileID: 694808822629180567}
   HoneyInside: {fileID: 3583132326809092101}
   larveInside: {fileID: 7597337131153820433}

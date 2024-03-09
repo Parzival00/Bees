@@ -18,7 +18,8 @@ MonoBehaviour:
   MiniGameDescription: 'Player Stats:'
   minGameUIBackGround: {fileID: 4938547091663013404, guid: 718b7349491018544b6e9dae6ea0c1b3, type: 3}
   miniGameScores: []
-  CappedCellsPercentage: 0.518
-  HoneyCellsPercentage: 0.249
+  combCellsSettings:
+    CappedCellsPercentage: 0
+    HoneyCellsPercentage: 0
   SetUpSpawner: {fileID: 0}
   GameScene: End Scene

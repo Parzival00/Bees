@@ -10,7 +10,10 @@ public class WorkerBee : MonoBehaviour
     public Transform spawningSpot;
     public GameObject nectarGO;
     private bool done;
-
+    private void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+    }
 
     private void Update()
     {

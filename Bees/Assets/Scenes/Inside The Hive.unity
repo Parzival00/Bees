@@ -4340,6 +4340,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+--- !u!114 &1825262783 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6368588588115460, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+  m_PrefabInstance: {fileID: 1825262782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d665612eec2a5aa419afbda57462a882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1832818829 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8330534279613177840, guid: 470971a4b18f88a45baaff9aff218353, type: 3}
@@ -5456,6 +5467,10 @@ PrefabInstance:
       propertyPath: currentMiniGame
       value: 
       objectReference: {fileID: 11400000, guid: f4b13573a01c0fe4782d2f319c396465, type: 2}
+    - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
+      propertyPath: playerUIManager
+      value: 
+      objectReference: {fileID: 1825262783}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

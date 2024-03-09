@@ -48,11 +48,8 @@ public class MiniGameScriptable : ScriptableObject
     //capped cells have thier scripts destroyed to save on computational power
     //only relevant for games inside the hive
     [Header("Comb Cells Settings")]
-    [Range(0f, 1f)]
-    public float CappedCellsPercentage = 0.2f; // Default value represents 20%
+    public CombCellsSettings combCellsSettings;
 
-    [Range(0f, 1f)]
-    public float HoneyCellsPercentage = 0.2f; // Default value represents 20%
 
 
     [Header("Set Up information")]
@@ -78,7 +75,8 @@ public class MiniGameScriptable : ScriptableObject
         {
             if (metric.metricName == scoreName)
             {
-                metric.MetricScore=0;
+                metric.MetricScore = 0;
+                metric.Ui_Instance.ChangeScore(metric.MetricScore);
             }
 
         }
@@ -91,7 +89,7 @@ public class MiniGameScriptable : ScriptableObject
 
 
 
-        foreach(GameMetrics metric in miniGameScores)
+        foreach (GameMetrics metric in miniGameScores)
         {
             if (metric.metricName == scoreName)
             {
@@ -156,8 +154,61 @@ public class MiniGameScriptable : ScriptableObject
     {
         foreach (GameMetrics metric in miniGameScores)
         {
-            metric.Ui_Instance =Instantiate(metric.UI_prefab, scoreBG.transform).GetComponent<scoreUIManager>();
+            metric.Ui_Instance = Instantiate(metric.UI_prefab, scoreBG.transform).GetComponent<scoreUIManager>();
             metric.Ui_Instance.ChangeScore(metric.MetricScore);
         }
+    }
+
+    private void OnValidate()
+    {
+        if (combCellsSettings != null)
+        {
+            float totalPercentage = combCellsSettings.CappedCellsPercentage + combCellsSettings.HoneyCellsPercentage;
+
+            // Ensure the total percentage does not exceed 1
+            if (totalPercentage > 1f)
+            {
+                // Adjust the percentages to ensure they sum up to 1
+                float excess = totalPercentage - 1f;
+                float adjustedPercentage = Mathf.Clamp01(combCellsSettings.CappedCellsPercentage - excess);
+                combCellsSettings.CappedCellsPercentage = adjustedPercentage;
+                combCellsSettings.HoneyCellsPercentage = 1f - adjustedPercentage;
+            }
+        }
+    }
+}
+[System.Serializable]
+public class CombCellsSettings
+{
+    [Range(0f, 1f)]
+    public float CappedCellsPercentage = 0.2f; // Default value represents 20%
+
+    [Range(0f, 1f)]
+    public float HoneyCellsPercentage = 0.2f; // Default value represents 20%
+}
+
+[CustomPropertyDrawer(typeof(CombCellsSettings))]
+public class CombCellsSettingsDrawer : PropertyDrawer
+{
+    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    {
+        EditorGUI.BeginProperty(position, label, property);
+
+        SerializedProperty cappedCellsPercentage = property.FindPropertyRelative("CappedCellsPercentage");
+        SerializedProperty honeyCellsPercentage = property.FindPropertyRelative("HoneyCellsPercentage");
+
+        // Draw the property fields
+        float lineHeight = EditorGUIUtility.singleLineHeight;
+        Rect rect = new Rect(position.x, position.y, position.width, lineHeight);
+        EditorGUI.PropertyField(rect, cappedCellsPercentage, new GUIContent("Capped Cells Percentage"));
+        rect.y += lineHeight + EditorGUIUtility.standardVerticalSpacing;
+        EditorGUI.PropertyField(rect, honeyCellsPercentage, new GUIContent("Honey Cells Percentage"));
+
+        EditorGUI.EndProperty();
+    }
+
+    public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+    {
+        return EditorGUIUtility.singleLineHeight * 2 + EditorGUIUtility.standardVerticalSpacing;
     }
 }

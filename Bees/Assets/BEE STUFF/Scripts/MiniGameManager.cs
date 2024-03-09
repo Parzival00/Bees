@@ -38,7 +38,7 @@ public class MiniGameManager : MonoBehaviour
     private void Start()
     {
         allClusters = FindObjectsOfType<HiveCluster>();
-        playerUIManager = FindObjectOfType<PlayerUIManager>();
+        playerUIManager = GetComponentInChildren<PlayerUIManager>();
         currentMiniGame = allMiniGames[0];
         StartCoroutine(LoadSceneAndDisplayInfo());
 
@@ -50,26 +50,28 @@ public class MiniGameManager : MonoBehaviour
         if (tutWindowCounter <= currentMiniGame.tutorialWindowTime)
         {
             tutWindowCounter += Time.deltaTime;
-            playerUIManager.closeTutrialButton.interactable = false;
-        }
-        else if (!playStarted)
-        {
-            playerUIManager.closeTutrialButton.interactable = true;
+            
         }
         else
         {
-            miniGameCounter += Time.deltaTime;
-            if (miniGameCounter >= currentMiniGame.MiniGameTime)
+            if (playStarted)
             {
-                NextMiniGame();
+                miniGameCounter += Time.deltaTime;
+                if (miniGameCounter >= currentMiniGame.MiniGameTime)
+                {
+                    NextMiniGame();
+                }
             }
+
         }
+        
     }
 
     private void NextMiniGame()
     {
         miniGameCounter = 0;
         tutWindowCounter = 0;
+        playStarted = false;
         currentMiniGame.SaveMiniGameMetrics();
         miniGameIndex++;
         if (miniGameIndex >= allMiniGames.Length) { miniGameIndex = 0; }
@@ -93,7 +95,7 @@ public class MiniGameManager : MonoBehaviour
 
         foreach (var cluster in allClusters)
         {
-            cluster.SetUPCells(currentMiniGame.CappedCellsPercentage, currentMiniGame.HoneyCellsPercentage);
+            cluster.SetUPCells(currentMiniGame.combCellsSettings.CappedCellsPercentage, currentMiniGame.combCellsSettings.HoneyCellsPercentage);
 
             if (!cluster.playerReach)
             {

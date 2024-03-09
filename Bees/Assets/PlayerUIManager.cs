@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
@@ -18,8 +19,17 @@ public class PlayerUIManager : MonoBehaviour
     public GameObject scoreGO;
     public TMP_Text timer;
 
+    private void Start()
+    {
+        closeTutrialButton = GetComponentInChildren<Button>();
+    }
+
     private void Update()
     {
+        if (MiniGameManager.instance.tutWindowCounter > MiniGameManager.instance.currentMiniGame.tutorialWindowTime)
+        {
+            closeTutrialButton.interactable = true;
+        }
         timer.text = (MiniGameManager.instance.currentMiniGame.MiniGameTime - MiniGameManager.instance.miniGameCounter).ToString();
     }
 

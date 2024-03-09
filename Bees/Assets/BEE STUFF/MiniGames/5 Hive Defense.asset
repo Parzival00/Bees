@@ -22,7 +22,8 @@ MonoBehaviour:
     metricName: 7
     UI_prefab: {fileID: 6354354389398005937, guid: 55b483c3987205c4090472fa3b087d6f, type: 3}
     Ui_Instance: {fileID: 0}
-  CappedCellsPercentage: 1
-  HoneyCellsPercentage: 1
+  combCellsSettings:
+    CappedCellsPercentage: 0.766001
+    HoneyCellsPercentage: 0.23399901
   SetUpSpawner: {fileID: 0}
   GameScene: Inside The Hive

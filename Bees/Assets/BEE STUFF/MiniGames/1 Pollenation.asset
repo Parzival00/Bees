@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 1 Pollenation
   m_EditorClassIdentifier: 
   MiniGameName: pollenation
-  MiniGameTime: 300
-  tutorialWindowTime: 20
+  MiniGameTime: 30
+  tutorialWindowTime: 5
   MiniGameDescription: Collect Pollen as quickly as you can from the flowers, and
     dont forget to keep an eye on your pollen meter. when it's full that means you
     need to carry it back to the hive.
-  minGameUIBackGround: {fileID: 4938547091663013404, guid: 718b7349491018544b6e9dae6ea0c1b3, type: 3}
+  minGameUIBackGround: {fileID: 0}
   miniGameScores:
-  - MetricScore: 0
+  - MetricScore: 75
     metricName: 0
     UI_prefab: {fileID: 716788881083554963, guid: 8d965a6df667b384d9889d0f5cdeffdc, type: 3}
     Ui_Instance: {fileID: 0}
@@ -32,7 +32,8 @@ MonoBehaviour:
     metricName: 2
     UI_prefab: {fileID: 4566281660081132663, guid: 0caa838bfee512c4fbd6bb2e1b434686, type: 3}
     Ui_Instance: {fileID: 0}
-  CappedCellsPercentage: 0.486
-  HoneyCellsPercentage: 0.253
+  combCellsSettings:
+    CappedCellsPercentage: 0
+    HoneyCellsPercentage: 0
   SetUpSpawner: {fileID: 0}
-  GameScene: Pollinating Game
+  GameScene: Jade Pollenation Scene
