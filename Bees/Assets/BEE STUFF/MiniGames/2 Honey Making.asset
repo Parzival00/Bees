@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 2 Honey Making
   m_EditorClassIdentifier: 
   MiniGameName: Honey Making
-  MiniGameTime: 20
+  MiniGameTime: 90
   tutorialWindowTime: 5
   MiniGameDescription: Take the Nectar from the worker bees and put it into the honey
     comb to make honey
-  minGameUIBackGround: {fileID: 4938547091663013404, guid: 718b7349491018544b6e9dae6ea0c1b3, type: 3}
+  minGameUIBackGround: {fileID: 0}
   miniGameScores:
-  - MetricScore: 0
+  - MetricScore: 16
     metricName: 3
     UI_prefab: {fileID: 6335829795918357248, guid: 1028e66edde7bd543b0e8eea845c4c67, type: 3}
     Ui_Instance: {fileID: 0}

@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: 4 Birth
   m_EditorClassIdentifier: 
   MiniGameName: Bee Birth
-  MiniGameTime: 160
-  tutorialWindowTime: 20
+  MiniGameTime: 90
+  tutorialWindowTime: 5
   MiniGameDescription: Eat your way out of the honey comb Cell
-  minGameUIBackGround: {fileID: 4938547091663013404, guid: 718b7349491018544b6e9dae6ea0c1b3, type: 3}
+  minGameUIBackGround: {fileID: 0}
   miniGameScores:
-  - MetricScore: 0
+  - MetricScore: 20
     metricName: 6
     UI_prefab: {fileID: 3942436118287145696, guid: 3fed952f2e0e04849a50462625544c8a, type: 3}
     Ui_Instance: {fileID: 0}

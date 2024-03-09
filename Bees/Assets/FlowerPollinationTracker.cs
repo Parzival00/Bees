@@ -5,14 +5,15 @@ using UnityEngine;
 public class FlowerPollinationTracker : ScoreModifier
 {
 
-    private void OnTriggerEnter(Collider hit)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (hit.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            if(IncreasescoreIfAplicable(MetricName.FlowersPollenated, 1))
+            if (IncreasescoreIfAplicable(MetricName.FlowersPollenated, 1))
             {
                 Destroy(this);//destroy this script on the flower
             }
         }
     }
+
 }

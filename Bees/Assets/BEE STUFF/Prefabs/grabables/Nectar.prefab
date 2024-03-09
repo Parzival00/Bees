@@ -200,19 +200,7 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1084533777490478864}
-        m_TargetAssemblyTypeName: BeeGame_Grab, Assembly-CSharp
-        m_MethodName: On_SelectExited
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -324,5 +312,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item_Name: 1
-  miniGamesUsed: []
+  points: 1
   being_Held: 0

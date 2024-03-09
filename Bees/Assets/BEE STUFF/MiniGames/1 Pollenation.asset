@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1 Pollenation
   m_EditorClassIdentifier: 
   MiniGameName: pollenation
-  MiniGameTime: 30
+  MiniGameTime: 90
   tutorialWindowTime: 5
   MiniGameDescription: Collect Pollen as quickly as you can from the flowers, and
     dont forget to keep an eye on your pollen meter. when it's full that means you

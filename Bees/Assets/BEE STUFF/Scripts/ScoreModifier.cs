@@ -11,7 +11,7 @@ public class ScoreModifier : MonoBehaviour
         if (targetMetric == MetricName.FlowersPollenated)
         {
             //has pollen on legs
-            if (MiniGameManager.instance.currentMiniGame.GetScore(MetricName.PollenCollected) > -1)
+            if (MiniGameManager.instance.currentMiniGame.GetScore(MetricName.PollenCollected) > 0 || MiniGameManager.instance.currentMiniGame.GetScore(MetricName.PollenDelivered) > 0)
             {
                 //increase number of flowers pollinated
                 foreach (GameMetrics metric in MiniGameManager.instance.currentMiniGame.miniGameScores)

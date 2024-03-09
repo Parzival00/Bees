@@ -7,7 +7,7 @@ public class BeeGame_Grab : ScoreModifier
 {
     public GrabNames item_Name;
     public float points = 1;
-    [HideInInspector]
+
     public bool being_Held;
 
 
@@ -30,7 +30,7 @@ public class BeeGame_Grab : ScoreModifier
         else if(item_Name == GrabNames.InsideHoney)
         {
             //check if minigame has honeyeatenMetric
-            if (DecreasescoreIfAplicable(MetricName.HoneyEaten, points))
+            if (IncreasescoreIfAplicable(MetricName.HoneyEaten, points))
             {
                 //if so, yeet
                 Destroy(gameObject);

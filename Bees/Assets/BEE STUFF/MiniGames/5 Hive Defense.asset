@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: 5 Hive Defense
   m_EditorClassIdentifier: 
   MiniGameName: Hive Defense
-  MiniGameTime: 160
-  tutorialWindowTime: 20
+  MiniGameTime: 90
+  tutorialWindowTime: 5
   MiniGameDescription: Defend the hive from a swarm of yellowjackets
-  minGameUIBackGround: {fileID: 4938547091663013404, guid: 718b7349491018544b6e9dae6ea0c1b3, type: 3}
+  minGameUIBackGround: {fileID: 0}
   miniGameScores:
   - MetricScore: 0
     metricName: 7

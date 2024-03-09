@@ -13,6 +13,7 @@ public class WorkerBee : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.SetDestination(FindObjectOfType<XROrigin>().transform.position);
     }
 
     private void Update()
@@ -32,11 +33,6 @@ public class WorkerBee : MonoBehaviour
 
     }
 
-    public void SetUpWorkerBee()
-    {
-        agent = GetComponent<NavMeshAgent>();
-        agent.SetDestination(FindObjectOfType<XROrigin>().transform.position);
-    }
 
     public void RecallWorkerBee()
     {

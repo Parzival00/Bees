@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: 3 Nursery
   m_EditorClassIdentifier: 
   MiniGameName: Nursery
-  MiniGameTime: 160
-  tutorialWindowTime: 20
+  MiniGameTime: 90
+  tutorialWindowTime: 5
   MiniGameDescription: Take the Nectar from the worker bees and put it into the honey
     comb to make honey
-  minGameUIBackGround: {fileID: 4938547091663013404, guid: 718b7349491018544b6e9dae6ea0c1b3, type: 3}
+  minGameUIBackGround: {fileID: 0}
   miniGameScores:
-  - MetricScore: 0
+  - MetricScore: 3
     metricName: 4
     UI_prefab: {fileID: 125537850048530365, guid: 96243bfd9003c2b4d9c3e5570f5ae73f, type: 3}
     Ui_Instance: {fileID: 0}
-  - MetricScore: 0
+  - MetricScore: 3
     metricName: 5
     UI_prefab: {fileID: 6820232514027437605, guid: 94bd49ae2ee47594e884a4d58251caf6, type: 3}
     Ui_Instance: {fileID: 0}
