@@ -5,6 +5,12 @@ using UnityEngine;
 public class PollinationGame : MonoBehaviour
 {
 
+    private void Start()
+    {
+        gameObject.GetComponent<BoxCollider>().isTrigger = true;
+    }
+
+
     //like on collision but for character controller since it doesnt use rigidbody
 
     private void OnTriggerEnter(Collider hit)

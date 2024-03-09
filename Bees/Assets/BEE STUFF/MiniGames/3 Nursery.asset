@@ -21,11 +21,11 @@ MonoBehaviour:
   miniGameScores:
   - MetricScore: 0
     metricName: 4
-    UI_prefab: {fileID: 6354354389398005937, guid: 55b483c3987205c4090472fa3b087d6f, type: 3}
+    UI_prefab: {fileID: 125537850048530365, guid: 96243bfd9003c2b4d9c3e5570f5ae73f, type: 3}
     Ui_Instance: {fileID: 0}
   - MetricScore: 0
     metricName: 5
-    UI_prefab: {fileID: 6354354389398005937, guid: 55b483c3987205c4090472fa3b087d6f, type: 3}
+    UI_prefab: {fileID: 6820232514027437605, guid: 94bd49ae2ee47594e884a4d58251caf6, type: 3}
     Ui_Instance: {fileID: 0}
   combCellsSettings:
     CappedCellsPercentage: 0.2
