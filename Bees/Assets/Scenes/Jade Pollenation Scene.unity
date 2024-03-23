@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2049272661}
-  m_IndirectSpecularColor: {r: 0.11265547, g: 0.28152782, b: 0.709184, a: 1}
+  m_IndirectSpecularColor: {r: 0.11268017, g: 0.2815709, b: 0.70918083, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -817,21 +817,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.5
+      value: 160.9
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.5
+      value: 142.4
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2101,6 +2105,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1486726653596525026, guid: daf661d478fbcbf4791f00721500cb43, type: 3}
   m_PrefabInstance: {fileID: 391303735}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &436716978 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8322814450545720107, guid: 149579663824b944b82e446b09eb9360, type: 3}
+  m_PrefabInstance: {fileID: 1859836603}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &442839484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2179,21 +2188,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -59.5
+      value: 109.899994
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.9
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3037,21 +3050,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -82.899994
+      value: 86.5
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.300003
+      value: 106.6
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3367,6 +3384,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 108225653778528902, guid: 3e2accafa3a5f1b40ba86cf39bcb49a7, type: 3}
   m_PrefabInstance: {fileID: 766598908}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &776513401
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4575958943298653548, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575958943298653548, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 90.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575958943298653548, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575958943298653548, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 127.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575958943298653548, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575958943298653548, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575958943298653548, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575958943298653548, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575958943298653548, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575958943298653548, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575958943298653548, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964905530498646212, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: hive
+      value: 
+      objectReference: {fileID: 436716978}
+    - target: {fileID: 6884490821520178017, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      propertyPath: m_Name
+      value: Bee Pollenation AI
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6884490821520178017, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1485469600}
+  m_SourcePrefab: {fileID: 100100000, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
 --- !u!1001 &815527872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3379,21 +3464,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -48.59999
+      value: 120.8
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 42.1
+      value: 163
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3433,6 +3522,144 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
   m_PrefabInstance: {fileID: 815527872}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &916214019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 916214024}
+  - component: {fileID: 916214023}
+  - component: {fileID: 916214022}
+  - component: {fileID: 916214021}
+  - component: {fileID: 916214020}
+  m_Layer: 0
+  m_Name: NavMesh Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &916214020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916214019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 28ec252d0fc17ec4b9c3e4e5a4e2df35, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!64 &916214021
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916214019}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &916214022
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916214019}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &916214023
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916214019}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &916214024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916214019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 122.6, y: 15.79, z: 116.7}
+  m_LocalScale: {x: 12.650911, y: 12.650911, z: 12.650911}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &919341798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3445,21 +3672,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -32.699997
+      value: 136.7
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.799995
+      value: 147.7
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3709,21 +3940,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.699997
+      value: 167.7
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.200005
+      value: 104.7
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3907,21 +4142,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -75.2
+      value: 94.2
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 53.6
+      value: 174.5
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4369,21 +4608,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42
+      value: 127.399994
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.3
+      value: 131.2
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4501,21 +4744,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -78.7
+      value: 90.7
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.9
+      value: 142.8
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4567,21 +4814,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -60.039993
+      value: 109.36
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.4000015
+      value: 119.5
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4897,21 +5148,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.3
+      value: 145.09999
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.5
+      value: 118.4
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5029,21 +5284,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -45.1
+      value: 124.299995
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.2
+      value: 78.7
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5161,21 +5420,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.59999
+      value: 152.8
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -26.5
+      value: 94.4
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5293,21 +5556,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.7
+      value: 164.7
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 50.4
+      value: 171.3
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5557,21 +5824,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.1
+      value: 173.5
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.87
+      value: 125.770004
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6217,21 +6488,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.1
+      value: 145.29999
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 49.4
+      value: 170.3
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6535,6 +6810,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 629542536758681526, guid: 7ca2fa2809968cf47852232e5d4a6e43, type: 3}
   m_PrefabInstance: {fileID: 1438647842}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1485469593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6884490821520178017, guid: d92b8655a6ed84f4aa01467b89405416, type: 3}
+  m_PrefabInstance: {fileID: 776513401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1485469600
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485469593}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1001 &1506845159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6547,21 +6854,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.9
+      value: 144.5
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -54.5
+      value: 66.4
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6625,7 +6936,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524259829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 169.4, y: 13.1, z: 120.9}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7459,21 +7770,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -75.2
+      value: 94.2
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.4
+      value: 82.5
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7525,21 +7840,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -94
+      value: 75.399994
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.9
+      value: 154.8
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7657,21 +7976,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -90.7
+      value: 78.7
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -27.400002
+      value: 93.5
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7793,6 +8116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pollenation Game Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 6364327108953384902, guid: 149579663824b944b82e446b09eb9360, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8322814450545720107, guid: 149579663824b944b82e446b09eb9360, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7894,21 +8221,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -63
+      value: 106.399994
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -56.1
+      value: 64.8
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8873,21 +9204,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.92
+      value: 131.48
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3000002
+      value: 13.400001
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.3
+      value: 97.600006
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9203,21 +9538,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerA Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157171010838543620, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
+      propertyPath: m_TagString
+      value: Flower
+      objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -60.759995
+      value: 108.64
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1800003
+      value: 16.28
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.450005
+      value: 141.35
       objectReference: {fileID: 0}
     - target: {fileID: 8826993131193198526, guid: 5dc65b6a22891cb4da376d725551767a, type: 3}
       propertyPath: m_LocalRotation.w
