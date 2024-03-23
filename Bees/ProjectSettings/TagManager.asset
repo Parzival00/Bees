@@ -9,6 +9,7 @@ TagManager:
   - Anchor
   - SamplesInfoPanel
   - Pollen Menu
+  - Waypoint
   layers:
   - Default
   - TransparentFX
