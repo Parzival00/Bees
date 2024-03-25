@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
 using Oculus.Interaction.Samples;
+using UnityEngine.Audio;
 
 public class MiniGameManager : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class MiniGameManager : MonoBehaviour
 
     public MiniGameScriptable currentMiniGame;
     public MiniGameScriptable[] allMiniGames;
-    private int miniGameIndex = 0;
+    public int miniGameIndex = 0;
     private HiveCluster[] allClusters;
 
 
@@ -22,12 +23,18 @@ public class MiniGameManager : MonoBehaviour
     public float tutWindowCounter = 0;
     public float miniGameCounter = 0;
 
+    public AudioManager audioManager;
+
+
     private void Awake()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    
         if(instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(audioManager);
 
         }
         else
@@ -82,9 +89,19 @@ public class MiniGameManager : MonoBehaviour
 
     private IEnumerator LoadSceneAndDisplayInfo()
     {
-        currentMiniGame.ResetScores();
+        // Change music track based on the loaded mini-game
+       if (audioManager != null) {
+        audioManager.ChangeMusic(currentMiniGame.musicTrackID);
+        } else {
+        Debug.LogWarning("AudioManager instance is null.");
+        }
 
+        currentMiniGame.ResetScores();
+        
         SceneManager.LoadScene(currentMiniGame.GameScene);
+
+        // Change music track based on the loaded mini-game
+        //AudioManager.audioManager.ChangeMusic(currentMiniGame.musicTrackID);
 
         yield return new WaitUntil(() => sceneLoaded);
 
@@ -131,7 +148,6 @@ public class MiniGameManager : MonoBehaviour
     {
         sceneLoaded = true;
     }
-
 
 
 }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457d49e9f08226b4687c2d173813ea35, type: 3}
   m_Name: 2 Honey Making
   m_EditorClassIdentifier: 
+  musicTrackID: 2
   MiniGameName: Honey Making
   MiniGameTime: 90
   tutorialWindowTime: 5

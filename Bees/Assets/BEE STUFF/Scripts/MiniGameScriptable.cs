@@ -4,6 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.Audio;
 
 
 [System.Serializable]
@@ -35,6 +36,9 @@ public enum MetricName
 // Added 'public' access modifier to the class declaration
 public class MiniGameScriptable : ScriptableObject
 {
+    [Header("Audio Settings")]
+    public int musicTrackID; // Identifier for the music track associated with this mini-game
+
     [Header("UI Data")]
     public string MiniGameName;
     public float MiniGameTime;
@@ -42,14 +46,13 @@ public class MiniGameScriptable : ScriptableObject
     public string MiniGameDescription = "Collect pollen by interacting with the flowers in the garden until your pollen meter is full";
     public GameObject minGameUIBackGround;
     public GameMetrics[] miniGameScores; // some mingames may have more than one metic to track.
-
-
+  
+  
     //NOTE these two values should not be in excess of 100 percent, if they do not total 100 percent, this means the other percent of cells will be empty
     //capped cells have thier scripts destroyed to save on computational power
     //only relevant for games inside the hive
     [Header("Comb Cells Settings")]
     public CombCellsSettings combCellsSettings;
-
 
 
     [Header("Set Up information")]

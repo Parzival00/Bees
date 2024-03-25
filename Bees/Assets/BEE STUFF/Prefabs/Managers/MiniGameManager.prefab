@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8325072522692451128
 MonoBehaviour:
@@ -54,6 +54,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3e19fcf8e906dd94a9579caeb5011d8a, type: 2}
   - {fileID: 11400000, guid: 450d0a735b71d0848bae0b5d4a1fa514, type: 2}
   - {fileID: 11400000, guid: 71862bfbc81c4b340bf4a0ce69656f8e, type: 2}
+  miniGameIndex: 0
   playStarted: 0
   tutWindowCounter: 0
   miniGameCounter: 0
+  audioManager: {fileID: 6628450548328536693, guid: 32fff63ac75588b408cdd2aa5c1162f0, type: 3}

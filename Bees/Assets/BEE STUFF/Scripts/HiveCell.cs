@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.Audio;
 
 
 public enum CellState { Empty, HoneyInside, larveInside, Capped}
@@ -14,15 +15,23 @@ public class HiveCell : ScoreModifier
     public GameObject HoneyInside;
     public GameObject larveInside;
 
-
+    //Audio Manager
+    AudioManager audioManager;
 
     public List<BeeGame_Grab> HoneySpawns;
+
+    //Audio
+    private void Awake()
+    {
+       audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
         BeeGame_Grab InputItem = collision.gameObject.GetComponent<BeeGame_Grab>();
         if (InputItem != null)
         {
+            audioManager.PlaySFX(audioManager.itemCollected);
 
             if(InputItem.being_Held)
             {
@@ -66,6 +75,7 @@ public class HiveCell : ScoreModifier
         //if player input is honey and state is LArve Inside, cap it and remove the script
         else if (currCellState == CellState.larveInside && item.item_Name == GrabNames.Honey)
         {
+            audioManager.PlaySFX(audioManager.itemTurnin);
             //remove honey from player's hand
             Destroy(item.gameObject);
             NewCellState(CellState.Capped);
@@ -74,6 +84,7 @@ public class HiveCell : ScoreModifier
 
         else if(currCellState == CellState.Empty && item.item_Name == GrabNames.Nectar)
         {
+            audioManager.PlaySFX(audioManager.itemTurnin);
             Destroy(item.gameObject);
             NewCellState(CellState.HoneyInside);
             IncreasescoreIfAplicable(MetricName.HoneyCellsCreated, item.points);

@@ -18,6 +18,8 @@ MonoBehaviour:
   MiniGameDescription: Stuff About Bees
   minGameUIBackGround: {fileID: 4938547091663013404, guid: 718b7349491018544b6e9dae6ea0c1b3, type: 3}
   miniGameScores: []
+  audioSource: {fileID: 283478215864001393, guid: 0072632d83c295641a9e0dd4d322f6c3, type: 3}
+  audioClip: {fileID: 8300000, guid: 203fd6c002f13b84f89de31be7fa6bc0, type: 3}
   combCellsSettings:
     CappedCellsPercentage: 0.2
     HoneyCellsPercentage: 0.2
