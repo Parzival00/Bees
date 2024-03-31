@@ -5,11 +5,11 @@ using UnityEngine.AI;
 
 public class BeePollenationAI : MonoBehaviour
 {
-    public Transform[] WayPoints;
-    //public Transform hive;
+    private Transform[] WayPoints;
+    public Transform hive;
     private NavMeshAgent agent;
-    private int randomWayPoint;
-    private bool movingToWayPoint;
+
+    public bool movingToWayPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -24,41 +24,44 @@ public class BeePollenationAI : MonoBehaviour
         {
             WayPoints[i] = WayPointsObj[i].transform;
         }
+        AssignNewFlowerWavepoint();
 
-        randomWayPoint = Random.Range(0, WayPoints.Length); // Choose a random waypoint
-        movingToWayPoint = true;
-        agent.destination = WayPoints[randomWayPoint].position;
-        print("moving to " + WayPoints[randomWayPoint].gameObject.name + " at " + agent.destination.ToString());
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //StartCoroutine(MoveLoop());
-        print("moving to " + WayPoints[randomWayPoint].gameObject.name + " at " + agent.destination.ToString());
+        
 
         // When the bee reaches the current flower
-        if (agent.remainingDistance < 0.1f && movingToWayPoint)
+        if (agent.remainingDistance < agent.stoppingDistance && movingToWayPoint)
         {
             //move to hive once reached a flower
             movingToWayPoint = false;
-            //agent.destination = hive.position; //change the waypoint to the hive
+            agent.destination = hive.position; //change the waypoint to the hive
             print("moving to hive");
         }
 
         //When the bee reaches the hive
-        if(agent.remainingDistance > 0.1f && !!movingToWayPoint)
+        else if(agent.remainingDistance < agent.stoppingDistance && !movingToWayPoint)
         {
-            randomWayPoint = Random.Range(0, WayPoints.Length); // Choose a random waypoint
-            movingToWayPoint = true;
-            agent.destination = WayPoints[randomWayPoint].position;
-            print("moving to " + WayPoints[randomWayPoint].gameObject.name + " at " + WayPoints[randomWayPoint].position.ToString());
+            AssignNewFlowerWavepoint();
         }
+
         
         
         
 
         
+    }
+
+    private void AssignNewFlowerWavepoint()
+    {
+        int randomWayPoint = Random.Range(0, WayPoints.Length); // Choose a random waypoint
+        movingToWayPoint = true;
+        agent.destination = WayPoints[randomWayPoint].position;
+        print("moving to " + WayPoints[randomWayPoint].gameObject.name + " at " + agent.destination.ToString());
     }
     //IEnumerator MoveLoop()
     //{
