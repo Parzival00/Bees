@@ -14,7 +14,7 @@ public class HiveCell : ScoreModifier
     public GameObject cellCap;
     public GameObject HoneyInside;
     public GameObject larveInside;
-
+    public HoneyCombBase baseComb;
     //Audio Manager
     AudioManager audioManager;
 
@@ -24,36 +24,52 @@ public class HiveCell : ScoreModifier
     private void Awake()
     {
        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        baseComb = gameObject.GetComponentInChildren<HoneyCombBase>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        BeeGame_Grab InputItem = collision.gameObject.GetComponent<BeeGame_Grab>();
+        BeeGame_Grab InputItem = other.gameObject.GetComponent<BeeGame_Grab>();
         if (InputItem != null)
         {
             audioManager.PlaySFX(audioManager.itemCollected);
 
-            if(InputItem.being_Held)
+            if (InputItem.being_Held)
             {
-                if(HoneySpawns.Contains(InputItem)){
+                if (HoneySpawns.Contains(InputItem))
+                {
                     HoneySpawns.Remove(InputItem);
-                    if(HoneySpawns.Count <= 0)
-                    {
-                        ItemEnteredIntoCombCell();
-                    }
+
                 }
                 ItemEnteredIntoCombCell(InputItem);
             }
         }
     }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    BeeGame_Grab InputItem = collision.gameObject.GetComponent<BeeGame_Grab>();
+    //    if (InputItem != null)
+    //    {
+    //        audioManager.PlaySFX(audioManager.itemCollected);
+
+    //        if(InputItem.being_Held)
+    //        {
+    //            if(HoneySpawns.Contains(InputItem)){
+    //                HoneySpawns.Remove(InputItem);
+    //                if(HoneySpawns.Count <= 0)
+    //                {
+    //                    ItemEnteredIntoCombCell();
+    //                }
+    //            }
+    //            ItemEnteredIntoCombCell(InputItem);
+    //        }
+    //    }
+    //}
 
 
     public void ItemEnteredIntoCombCell(BeeGame_Grab item =null)
     {
-        if(item == null)
-        {
-            NewCellState(CellState.Empty);
-        }
+
 
         if (currCellState == CellState.HoneyInside && item.item_Name == GrabNames.Larvae)
         {
