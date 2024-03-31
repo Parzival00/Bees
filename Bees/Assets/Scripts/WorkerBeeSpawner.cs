@@ -17,7 +17,7 @@ public class WorkerBeeSpawner : MonoBehaviour
             Instantiate(WorkerBeeGO, transform.position,Quaternion.identity);
         }
     }
-    [ContextMenu("Start Mini Game")]
+
     public void SpawnWorkerBee()
     {
         Instantiate(WorkerBeeGO, transform.position, Quaternion.identity);
