@@ -40,7 +40,7 @@ public class PlayerUIManager : MonoBehaviour
         {
             closeTutrialButton.interactable = true;
         }
-        timer.text = (MiniGameManager.instance.currentMiniGame.MiniGameTime - MiniGameManager.instance.miniGameCounter).ToString();
+        timer.text = ((int)(MiniGameManager.instance.currentMiniGame.MiniGameTime - MiniGameManager.instance.miniGameCounter)).ToString();
     }
 
 
