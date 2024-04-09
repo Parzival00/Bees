@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicTrackID: 1
   MiniGameName: pollenation
-  MiniGameTime: 10
-  tutorialWindowTime: 90
+  MiniGameTime: 90
+  tutorialWindowTime: 5
   MiniGameDescription: Collect Pollen as quickly as you can from the flowers, and
     dont forget to keep an eye on your pollen meter. when it's full that means you
     need to carry it back to the hive.

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 457d49e9f08226b4687c2d173813ea35, type: 3}
-  m_Name: 6 End Screne
+  m_Name: 7 End Screne
   m_EditorClassIdentifier: 
   musicTrackID: 6
   MiniGameName: The End
