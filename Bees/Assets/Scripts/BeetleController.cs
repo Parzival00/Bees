@@ -33,7 +33,7 @@ public class BeetleController : MonoBehaviour
 
             if(timer >= timeToLayEggs) // spawn the egg if the beetle has taken enough time to lay it
             {
-                //spawn egg in honeycomb here
+                //TODO - spawn egg in honeycomb here
                 combsFailed++;
                 GetNewDestination();
                 timer = 0;
@@ -60,8 +60,19 @@ public class BeetleController : MonoBehaviour
     /// <summary>
     /// Gets the location of a random open honey comb in the hive
     /// </summary>
-    void GetNewDestination()
+    Vector3 GetNewDestination()
     {
+        HiveCell[] cells = FindObjectsByType<HiveCell>(FindObjectsSortMode.None);
+        int index = 0;
+        Vector3 pos = Vector3.zero;
+        //gets the location of the first cell that is uncapped 
+        do
+        {
+            index = Random.Range(0, cells.Length);
+            pos = cells[index].gameObject.transform.position;
+        }
+        while (cells[index].currCellState != CellState.Capped);
 
+        return pos;
     }
 }
