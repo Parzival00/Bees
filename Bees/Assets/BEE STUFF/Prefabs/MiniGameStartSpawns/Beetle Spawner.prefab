@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3830326370626552349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.013771, y: -0.3224187, z: 1.061785}
+  m_LocalPosition: {x: 10.013771, y: 1, z: 1.061785}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,5 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beetlePrefab: {fileID: 5756597255842624211, guid: 3b9614378158f3547ba8e86842fab78e, type: 3}
-  numBeetlesAtOnce: 3
+  numBeetlesAtOnce: 1
   timeBetweenChecks: 5

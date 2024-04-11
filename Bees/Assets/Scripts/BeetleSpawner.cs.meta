@@ -3,7 +3,8 @@ guid: 39eb979f1a0ee014c946b3da0941f04c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - beetlePrefab: {fileID: 5756597255842624211, guid: 3b9614378158f3547ba8e86842fab78e, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
