@@ -12,7 +12,10 @@ public class BeetleSpawner : MonoBehaviour
 
     float checkTime = 0;
 
-
+    void Start()
+    {
+        GameObject.Find("Walking Plane For Beetles").SetActive(true);
+    }
     void Update()
     {
         checkTime += Time.deltaTime;

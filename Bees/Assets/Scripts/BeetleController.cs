@@ -46,6 +46,7 @@ public class BeetleController : MonoBehaviour
         if (Vector3.Distance(transform.position, escapeLocation) < 5) //destroy if it gets to the escape location
         {
             //print("escaping");
+            combsSaved++;
             Destroy(gameObject);
         }
 
