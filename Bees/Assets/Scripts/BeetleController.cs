@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
+using TMPro;
 
 public class BeetleController : MonoBehaviour
 {
@@ -17,7 +19,11 @@ public class BeetleController : MonoBehaviour
     GameObject player ;
 
     Vector3 goal;
-    
+
+    //NEW ATTRIBUTES
+    public MiniGameScriptable pestScriptable; //refrences the pest control scriptable -- JESSE
+    public bool isDead; //check if beetle is dead --JESSE
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +71,17 @@ public class BeetleController : MonoBehaviour
         else
         {
             timer = 0;
+        }
+
+        updateEnemiesDefeatedMetric(); //Call to method below - JESSE
+    }
+
+    //If beetle is dead, score of "enemies defeated" is increased by 1 -- JESSE
+    public void updateEnemiesDefeatedMetric()
+    {
+        if (isDead)
+        {
+            pestScriptable.IncreaseScore(MetricName.EnemiesDefeated, 1f);
         }
     }
 

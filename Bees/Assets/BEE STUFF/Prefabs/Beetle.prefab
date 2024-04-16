@@ -180,6 +180,8 @@ MonoBehaviour:
   escapeLocation: {x: 22, y: 1.3, z: 9}
   timeToLayEggs: 15
   distanceToKeepFromPlayer: 2
+  pestScriptable: {fileID: 11400000, guid: ff020b39956059d458fbbe1d414190af, type: 2}
+  isDead: 0
 --- !u!54 &-3764278588189983924
 Rigidbody:
   m_ObjectHideFlags: 0
