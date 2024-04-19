@@ -14,7 +14,7 @@ public class BeetleSpawner : MonoBehaviour
 
     void Start()
     {
-        GameObject.Find("Walking Plane For Beetles").SetActive(true);
+        //GameObject.Find("Walking Plane For Beetles").SetActive(true);
     }
     void Update()
     {
@@ -28,7 +28,7 @@ public class BeetleSpawner : MonoBehaviour
 
             for(int i = 0; i < numBeetlesAtOnce - beetlesInGame.Length; i++)
             {
-                Instantiate(beetlePrefab);
+                Instantiate(beetlePrefab, this.transform);
             }
         }
     }

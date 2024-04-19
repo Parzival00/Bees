@@ -26,6 +26,7 @@ public enum MetricName
     LarvaeCellsCapped,//nursery mini game
     HoneyEaten, //birth mini game
     EnemiesDefeated,//Hive Defense mini game
+    EggsLayed,
 }
 
 //HINT: to create a new mini game asset, go in the MiniGames Folder in BEE STUFF and right click,
@@ -88,7 +89,7 @@ public class MiniGameScriptable : ScriptableObject
     //Call in MiniGame Manager when score should be increased
     public void IncreaseScore(MetricName scoreName, float increase)
     {
-        increase = Mathf.Abs(increase);
+       // increase = Mathf.Abs(increase);
 
 
 

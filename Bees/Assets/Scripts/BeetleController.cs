@@ -11,9 +11,8 @@ public class BeetleController : MonoBehaviour
     [SerializeField] Vector3 escapeLocation;
     [SerializeField] float timeToLayEggs;
     [SerializeField] float distanceToKeepFromPlayer;
+    [SerializeField] GameObject eggPrefab;
 
-    int combsFailed = 0;
-    int combsSaved = 0;
     float timer = 0f;
 
     GameObject player ;
@@ -35,7 +34,7 @@ public class BeetleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //print(Vector3.Distance(transform.position, escapeLocation));
+
 
         if (Vector3.Distance(transform.position, player.transform.position) <= distanceToKeepFromPlayer) //if within radius of the player, run away
         {
@@ -51,8 +50,8 @@ public class BeetleController : MonoBehaviour
 
         if (Vector3.Distance(transform.position, escapeLocation) < 5) //destroy if it gets to the escape location
         {
-            //print("escaping");
-            combsSaved++;
+            print("escaping");
+            pestScriptable.IncreaseScore(MetricName.EnemiesDefeated, 1f);
             Destroy(gameObject);
         }
 
@@ -62,8 +61,10 @@ public class BeetleController : MonoBehaviour
 
             if(timer >= timeToLayEggs) // spawn the egg if the beetle has taken enough time to lay it
             {
-                //TODO - spawn egg in honeycomb here
-                combsFailed++;
+                //spawns egg and decreases score
+                Instantiate(eggPrefab, this.transform.position, Quaternion.identity);
+                print("laying egg");
+                pestScriptable.IncreaseScore(MetricName.EggsLayed,-1f);
                 GetNewDestination();
                 timer = 0;
             }
@@ -73,17 +74,8 @@ public class BeetleController : MonoBehaviour
             timer = 0;
         }
 
-        updateEnemiesDefeatedMetric(); //Call to method below - JESSE
     }
 
-    //If beetle is dead, score of "enemies defeated" is increased by 1 -- JESSE
-    public void updateEnemiesDefeatedMetric()
-    {
-        if (isDead)
-        {
-            pestScriptable.IncreaseScore(MetricName.EnemiesDefeated, 1f);
-        }
-    }
 
     /// <summary>
     /// Gets the location of a random open honey comb in the hive
