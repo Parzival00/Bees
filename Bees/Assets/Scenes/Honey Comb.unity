@@ -8212,7 +8212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1761023497}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -8251,7 +8251,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1279694609}
+      - m_Target: {fileID: 754898108}
         m_TargetAssemblyTypeName: BeeGame_Grab, Assembly-CSharp
         m_MethodName: ON_SelectEntered
         m_Mode: 1
@@ -8327,19 +8327,19 @@ MonoBehaviour:
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
-  m_TrackPosition: 1
+  m_TrackPosition: 0
   m_SmoothPosition: 0
   m_SmoothPositionAmount: 8
   m_TightenPosition: 0.1
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 8
   m_TightenRotation: 0.1
-  m_TrackScale: 1
+  m_TrackScale: 0
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
   m_TightenScale: 0.1
-  m_ThrowOnDetach: 1
+  m_ThrowOnDetach: 0
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -8363,7 +8363,7 @@ MonoBehaviour:
   m_AttachPointCompatibilityMode: 0
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
-  m_AddDefaultGrabTransformers: 1
+  m_AddDefaultGrabTransformers: 0
 --- !u!54 &754898102
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14643,17 +14643,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 753445274712097554, guid: 82ee24cde0c04aa43b30f7e2d98d1a63, type: 3}
   m_PrefabInstance: {fileID: 1279694607}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1279694609 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4211899236463865968, guid: 82ee24cde0c04aa43b30f7e2d98d1a63, type: 3}
-  m_PrefabInstance: {fileID: 1279694607}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f630d4e0cfa9a22419456605ee5d25ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1295772826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19582,7 +19571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1761023497}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -19621,7 +19610,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1279694609}
+      - m_Target: {fileID: 1720377483}
         m_TargetAssemblyTypeName: BeeGame_Grab, Assembly-CSharp
         m_MethodName: ON_SelectEntered
         m_Mode: 1
@@ -19697,19 +19686,19 @@ MonoBehaviour:
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
-  m_TrackPosition: 1
+  m_TrackPosition: 0
   m_SmoothPosition: 0
   m_SmoothPositionAmount: 8
   m_TightenPosition: 0.1
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 8
   m_TightenRotation: 0.1
-  m_TrackScale: 1
+  m_TrackScale: 0
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
   m_TightenScale: 0.1
-  m_ThrowOnDetach: 1
+  m_ThrowOnDetach: 0
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -19733,7 +19722,7 @@ MonoBehaviour:
   m_AttachPointCompatibilityMode: 0
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
-  m_AddDefaultGrabTransformers: 1
+  m_AddDefaultGrabTransformers: 0
 --- !u!54 &1720377482
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20187,6 +20176,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 753445274712097554, guid: 82ee24cde0c04aa43b30f7e2d98d1a63, type: 3}
   m_PrefabInstance: {fileID: 1758845501}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1761023497 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8189171602324410035, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+  m_PrefabInstance: {fileID: 1825262782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1765618670
 PrefabInstance:
   m_ObjectHideFlags: 0
