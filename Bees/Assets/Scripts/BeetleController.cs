@@ -19,9 +19,7 @@ public class BeetleController : MonoBehaviour
 
     Vector3 goal;
 
-    //NEW ATTRIBUTES
-    public MiniGameScriptable pestScriptable; //refrences the pest control scriptable -- JESSE
-    public bool isDead; //check if beetle is dead --JESSE
+
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +49,7 @@ public class BeetleController : MonoBehaviour
         if (Vector3.Distance(transform.position, escapeLocation) < 5) //destroy if it gets to the escape location
         {
             print("escaping");
-            pestScriptable.IncreaseScore(MetricName.EnemiesDefeated, 1f);
+            MiniGameManager.instance.currentMiniGame.IncreaseScore(MetricName.EnemiesDefeated, 1f);
             Destroy(gameObject);
         }
 
@@ -64,7 +62,7 @@ public class BeetleController : MonoBehaviour
                 //spawns egg and decreases score
                 Instantiate(eggPrefab, this.transform.position, Quaternion.identity);
                 print("laying egg");
-                pestScriptable.IncreaseScore(MetricName.EggsLayed,-1f);
+                MiniGameManager.instance.currentMiniGame.IncreaseScore(MetricName.EggsLayed,-1f);
                 GetNewDestination();
                 timer = 0;
             }

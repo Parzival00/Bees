@@ -74,7 +74,7 @@ public class MiniGameManager : MonoBehaviour
         
     }
 
-    private void NextMiniGame()
+    public void NextMiniGame()
     {
         miniGameCounter = 0;
         tutWindowCounter = 0;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public enum GrabNames {Empty, Nectar, Pollen, Larvae, Honey,InsideHoney}
+public enum GrabNames {Empty, Nectar, Pollen, Larvae, Honey,InsideHoney, Inside_Cap}
 public class BeeGame_Grab : ScoreModifier
 {
     public GrabNames item_Name;
@@ -39,13 +39,24 @@ public class BeeGame_Grab : ScoreModifier
         //BIRTH MINIGAME
         else if(item_Name == GrabNames.InsideHoney)
         {
+
+            transform.localScale = transform.localScale *.9f;
+            points -= 1;
             //check if minigame has honeyeatenMetric
-            if (IncreasescoreIfAplicable(MetricName.HoneyEaten, points))
+            if (IncreasescoreIfAplicable(MetricName.HoneyEaten, 1))
             {
-                audioManager.PlaySFX(audioManager.honeyEaten);
-                //if so, yeet
+                audioManager.PlaySFX(audioManager.honeyEaten); 
+            }
+            if(points <= 1)
+            {
                 Destroy(gameObject);
             }
+        }
+
+        else if (item_Name == GrabNames.Inside_Cap)
+        {
+            Debug.Log("NEXT SCENE");
+            MiniGameManager.instance.NextMiniGame();
         }
         
     }

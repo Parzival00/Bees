@@ -1,19 +1,20 @@
+using Oculus.Interaction;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FlowerPollinationTracker : ScoreModifier
 {
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             if (IncreasescoreIfAplicable(MetricName.FlowersPollenated, 1))
             {
-                Destroy(this);//destroy this script on the flower
+                Destroy(this.gameObject);//destroy this script on the flower
             }
         }
     }
+
 
 }
