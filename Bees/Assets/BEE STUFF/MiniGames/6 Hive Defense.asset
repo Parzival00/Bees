@@ -21,7 +21,7 @@ MonoBehaviour:
   miniGameScores:
   - MetricScore: 0
     metricName: 7
-    UI_prefab: {fileID: 6174988373078961175, guid: 7b8ddcff966bb3d4f9c4946513913396, type: 3}
+    UI_prefab: {fileID: 6174988373078961175, guid: 9b74aa63c511bff45962f0251585b0ed, type: 3}
     Ui_Instance: {fileID: 0}
   combCellsSettings:
     CappedCellsPercentage: 0.766001
