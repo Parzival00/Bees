@@ -16,20 +16,19 @@ MonoBehaviour:
   MiniGameName: pollenation
   MiniGameTime: 90
   tutorialWindowTime: 5
-  MiniGameDescription: Collect Pollen as quickly as you can from the flowers, and
-    dont forget to keep an eye on your pollen meter. when it's full that means you
-    need to carry it back to the hive.
+  MiniGameDescription: Collect Pollen and Visit as many flowers as you can before
+    the timer runs out. Come Back to the Red Box to deliver the pollen to the Hive.
   minGameUIBackGround: {fileID: 0}
   miniGameScores:
-  - MetricScore: 0
+  - MetricScore: 55
     metricName: 0
     UI_prefab: {fileID: 716788881083554963, guid: 8d965a6df667b384d9889d0f5cdeffdc, type: 3}
     Ui_Instance: {fileID: 0}
-  - MetricScore: 0
+  - MetricScore: 100
     metricName: 1
     UI_prefab: {fileID: 224785159588192422, guid: 265e65fffef4fd24e801007deae69e03, type: 3}
     Ui_Instance: {fileID: 0}
-  - MetricScore: 0
+  - MetricScore: 6
     metricName: 2
     UI_prefab: {fileID: 4566281660081132663, guid: 0caa838bfee512c4fbd6bb2e1b434686, type: 3}
     Ui_Instance: {fileID: 0}

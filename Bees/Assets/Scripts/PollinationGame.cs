@@ -22,7 +22,7 @@ public class PollinationGame : MonoBehaviour
     }
 
 
-    //like on collision but for character controller since it doesnt use rigidbody
+
 
     private void OnTriggerEnter(Collider hit)
     {

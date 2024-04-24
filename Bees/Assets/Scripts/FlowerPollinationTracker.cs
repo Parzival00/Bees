@@ -1,13 +1,17 @@
 using Oculus.Interaction;
+using OVR;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FlowerPollinationTracker : ScoreModifier
 {
-    private void OnTriggerEnter(Collider other)
+
+    private void OnTriggerEnter(Collider hit)
     {
-        if (other.gameObject.CompareTag("Player"))
+
+
+        if (hit.gameObject.CompareTag("Player"))
         {
             if (IncreasescoreIfAplicable(MetricName.FlowersPollenated, 1))
             {
