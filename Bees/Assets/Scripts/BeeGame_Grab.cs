@@ -37,6 +37,13 @@ public class BeeGame_Grab : ScoreModifier
         }
 
         //BIRTH MINIGAME
+
+        else if (item_Name == GrabNames.Inside_Cap)
+        {
+            Debug.Log("NEXT SCENE");
+            MiniGameManager.instance.NextMiniGame();
+        }
+
         else if(item_Name == GrabNames.InsideHoney)
         {
 
@@ -45,7 +52,8 @@ public class BeeGame_Grab : ScoreModifier
             //check if minigame has honeyeatenMetric
             if (IncreasescoreIfAplicable(MetricName.HoneyEaten, 1))
             {
-                audioManager.PlaySFX(audioManager.honeyEaten); 
+                audioManager.PlaySFX(audioManager.honeyEaten);
+                Debug.Log("Honey Eaten");
             }
             if(points <= 1)
             {
@@ -53,11 +61,7 @@ public class BeeGame_Grab : ScoreModifier
             }
         }
 
-        else if (item_Name == GrabNames.Inside_Cap)
-        {
-            Debug.Log("NEXT SCENE");
-            MiniGameManager.instance.NextMiniGame();
-        }
+
         
     }
 
