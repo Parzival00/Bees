@@ -16,8 +16,10 @@ MonoBehaviour:
   MiniGameName: Honey Making
   MiniGameTime: 90
   tutorialWindowTime: 5
-  MiniGameDescription: Take the Nectar from the worker bees and put it into the honey
-    comb to make honey
+  MiniGameDescription: "Our colony needs to eat and to feed thousands of hungry bees
+    through the winter we need lots of honey. Help the colony by storing the nectar
+    in the cells of the honeycomb and capping them when they\u2019re full.Take the
+    Nectar from the worker bees and put it into the honey comb to make honey"
   minGameUIBackGround: {fileID: 0}
   miniGameScores:
   - MetricScore: 16

@@ -16,7 +16,9 @@ MonoBehaviour:
   MiniGameName: Hive Defense
   MiniGameTime: 90
   tutorialWindowTime: 5
-  MiniGameDescription: Defend the hive from a swarm of yellowjackets
+  MiniGameDescription: "o\tWE\u2019RE UNDER ATTACK! The hive can fall to many different
+    things and sometimes bigger and meaner insects try to take the colony down. Help
+    the colony by joining the other bees in taking out the attacker!"
   minGameUIBackGround: {fileID: 0}
   miniGameScores:
   - MetricScore: 0

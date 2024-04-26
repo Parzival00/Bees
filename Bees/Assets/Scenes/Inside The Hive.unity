@@ -946,11 +946,11 @@ PrefabInstance:
     - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
       propertyPath: allMiniGames.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 95814a846fa1c674099b59fd5b89c931, type: 2}
+      objectReference: {fileID: 11400000, guid: f3878995027e2554d8a9ee6058a4a296, type: 2}
     - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
       propertyPath: allMiniGames.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: f3878995027e2554d8a9ee6058a4a296, type: 2}
+      objectReference: {fileID: 11400000, guid: 95814a846fa1c674099b59fd5b89c931, type: 2}
     - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
       propertyPath: allMiniGames.Array.data[2]
       value: 

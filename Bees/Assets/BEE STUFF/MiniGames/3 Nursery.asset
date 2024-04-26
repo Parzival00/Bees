@@ -16,8 +16,10 @@ MonoBehaviour:
   MiniGameName: Nursery
   MiniGameTime: 90
   tutorialWindowTime: 5
-  MiniGameDescription: Take the Nectar from the worker bees and put it into the honey
-    comb to make honey
+  MiniGameDescription: "The colony can\u2019t survive without making new worker bees.
+    If we don\u2019t have bees, then we can\u2019t collect enough honey. Help out
+    the colony by taking care of the worker brood.Take the Nectar from the worker
+    bees and put it into the honey comb to make honey"
   minGameUIBackGround: {fileID: 0}
   miniGameScores:
   - MetricScore: 3
