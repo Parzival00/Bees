@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defenseScriptable: {fileID: 11400000, guid: 450d0a735b71d0848bae0b5d4a1fa514, type: 2}
   shakeThreshold: 2
-  maxShakeTime: 5
+  maxShakeTime: 2
   detectionRadius: 3
 --- !u!114 &-1683040050313591625
 MonoBehaviour:

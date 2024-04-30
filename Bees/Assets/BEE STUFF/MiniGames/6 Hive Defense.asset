@@ -28,5 +28,5 @@ MonoBehaviour:
   combCellsSettings:
     CappedCellsPercentage: 0.766001
     HoneyCellsPercentage: 0.23399901
-  SetUpSpawner: {fileID: 0}
+  SetUpSpawner: {fileID: 498739445688074585, guid: 94f22e927c261084eb2b332a1ba98f96, type: 3}
   GameScene: Inside The Hive
