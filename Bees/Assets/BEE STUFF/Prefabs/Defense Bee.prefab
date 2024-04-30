@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01b8dd7bf880d9741ba762291b0bdf24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navAgent: {fileID: 0}
+  navAgent: {fileID: 4362262571580850546}
 --- !u!1 &2034961672619383777
 GameObject:
   m_ObjectHideFlags: 0

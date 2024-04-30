@@ -24,21 +24,24 @@ public class DetectShake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //If the player is close enough to the wasp and is shaking their controller, up the shake time
-        if(_inputData._leftController.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 leftVelocity) && Vector3.Distance(this.transform.position, player.transform.position) <= detectionRadius)
+        if (Vector3.Distance(this.transform.position, player.transform.position) <= detectionRadius)
         {
-            if(Mathf.Abs(leftVelocity.magnitude) > shakeThreshold)
+            if (_inputData._leftController.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 leftVelocity))
             {
-                shakeTime += Time.deltaTime;
-            }
-        }
 
-        if (_inputData._rightController.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 rightVelocity) && Vector3.Distance(this.transform.position, player.transform.position) <= detectionRadius)
-        {
-            if (Mathf.Abs(rightVelocity.magnitude) > shakeThreshold)
+                if (Mathf.Abs(leftVelocity.magnitude) > shakeThreshold)
+                {
+                    shakeTime += Time.deltaTime;
+                }
+            }
+
+            if (_inputData._rightController.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 rightVelocity))
             {
-                shakeTime += Time.deltaTime;
+                if (Mathf.Abs(rightVelocity.magnitude) > shakeThreshold)
+                {
+                    shakeTime += Time.deltaTime;
+                }
             }
         }
 

@@ -14,6 +14,7 @@ public class HiveDefenseManager : MonoBehaviour
 
     GameObject currentWasp;
     int waspsKilled = 0;
+    bool fading = false;
 
     void Start()
     {
@@ -31,6 +32,8 @@ public class HiveDefenseManager : MonoBehaviour
 
             //fade to black and spawn new wasp
             StartCoroutine(FadeToBlack());
+
+            
         }
     }
 
@@ -38,25 +41,33 @@ public class HiveDefenseManager : MonoBehaviour
 
     IEnumerator FadeToBlack()
     {
-        // loop over specified time - fade to black
-        for (float i = 0; i <= fadeToBlackTime / 2f; i += Time.deltaTime)
+        if (!fading)
         {
-            // set color with i as alpha
-            fadeImage.color = new Color(0, 0, 0, i / (fadeToBlackTime / 2f));
-            yield return null;
+            fading = true;
+            // loop over specified time - fade to black
+            for (float i = 0; i < fadeToBlackTime; i += Time.deltaTime)
+            {
+                // set color with i as alpha
+                fadeImage.color = new Color(0, 0, 0, i);
+                yield return null;
+            }
+            fadeImage.color = new Color(0, 0, 0, 1);
+
+            //spawn new wasp
+            currentWasp = Instantiate(waspPrefab, new Vector3(Random.Range(2.5f, 17f),1.25f, Random.Range(-1f, 10f)), Quaternion.identity);
+
+            yield return new WaitForSeconds(timeBetweenWasps);
+
+            // loop backwards - fade to clear
+            for (float i = fadeToBlackTime; i > 0; i -= Time.deltaTime)
+            {
+                // set color with i as alpha
+                fadeImage.color = new Color(0, 0, 0, i);
+                yield return null;
+            }
+            fadeImage.color = new Color(0, 0, 0, 0);
+            fading = false;
         }
-
-        //spawn new wasp
-        currentWasp = Instantiate(waspPrefab, transform.position, Quaternion.identity);
-
-        yield return new WaitForSeconds(timeBetweenWasps);
-
-        // loop backwards - fade to clear
-        for (float i = fadeToBlackTime / 2f; i >= 0; i -= Time.deltaTime)
-        {
-            // set color with i as alpha
-            fadeImage.color = new Color(0, 0, 0, i / (fadeToBlackTime / 2f));
-            yield return null;
-        }
+       
     }
 }

@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498739445688074585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.8461537, y: 7.9561653, z: -11.184263}
+  m_LocalPosition: {x: 4.931, y: 1.576, z: 2.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waspPrefab: {fileID: 4130420613869061014, guid: 04011e4a5da856e4082bf48cd774a93c, type: 3}
-  defenseBee: {fileID: 0}
+  defenseBee: {fileID: 1798572626796604781, guid: 16ac578e2941f8548910d673b6b77d39, type: 3}
   fadeImage: {fileID: 0}
   friendlyBeeCount: 4
   fadeToBlackTime: 1
