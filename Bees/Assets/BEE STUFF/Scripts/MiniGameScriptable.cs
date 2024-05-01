@@ -191,28 +191,28 @@ public class CombCellsSettings
     public float HoneyCellsPercentage = 0.2f; // Default value represents 20%
 }
 
-[CustomPropertyDrawer(typeof(CombCellsSettings))]
-public class CombCellsSettingsDrawer : PropertyDrawer
-{
-    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
-    {
-        EditorGUI.BeginProperty(position, label, property);
+//[CustomPropertyDrawer(typeof(CombCellsSettings))]
+//public class CombCellsSettingsDrawer 
+//{
+//    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+//    {
+//        EditorGUI.BeginProperty(position, label, property);
 
-        SerializedProperty cappedCellsPercentage = property.FindPropertyRelative("CappedCellsPercentage");
-        SerializedProperty honeyCellsPercentage = property.FindPropertyRelative("HoneyCellsPercentage");
+//        SerializedProperty cappedCellsPercentage = property.FindPropertyRelative("CappedCellsPercentage");
+//        SerializedProperty honeyCellsPercentage = property.FindPropertyRelative("HoneyCellsPercentage");
 
-        // Draw the property fields
-        float lineHeight = EditorGUIUtility.singleLineHeight;
-        Rect rect = new Rect(position.x, position.y, position.width, lineHeight);
-        EditorGUI.PropertyField(rect, cappedCellsPercentage, new GUIContent("Capped Cells Percentage"));
-        rect.y += lineHeight + EditorGUIUtility.standardVerticalSpacing;
-        EditorGUI.PropertyField(rect, honeyCellsPercentage, new GUIContent("Honey Cells Percentage"));
+//        // Draw the property fields
+//        float lineHeight = EditorGUIUtility.singleLineHeight;
+//        Rect rect = new Rect(position.x, position.y, position.width, lineHeight);
+//        EditorGUI.PropertyField(rect, cappedCellsPercentage, new GUIContent("Capped Cells Percentage"));
+//        rect.y += lineHeight + EditorGUIUtility.standardVerticalSpacing;
+//        EditorGUI.PropertyField(rect, honeyCellsPercentage, new GUIContent("Honey Cells Percentage"));
 
-        EditorGUI.EndProperty();
-    }
+//        EditorGUI.EndProperty();
+//    }
 
-    public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
-    {
-        return EditorGUIUtility.singleLineHeight * 2 + EditorGUIUtility.standardVerticalSpacing;
-    }
-}
+//    public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+//    {
+//        return EditorGUIUtility.singleLineHeight * 2 + EditorGUIUtility.standardVerticalSpacing;
+//    }
+//}

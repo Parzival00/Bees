@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 457d49e9f08226b4687c2d173813ea35, type: 3}
-  m_Name: 5 Pest Control
+  m_Name: 6 Pest Control
   m_EditorClassIdentifier: 
   musicTrackID: 5
   MiniGameName: Pest Control
   MiniGameTime: 90
   tutorialWindowTime: 5
-  MiniGameDescription: "o\tThere\u2019s a host of pests that want a piece of what
-    we have. We can\u2019t let them take control or they can ruin or even steal our
+  MiniGameDescription: "There\u2019s a host of pests that want a piece of what we
+    have. We can\u2019t let them take control or they can ruin or even steal our
     honey supplies. Help the colony by rounding up these pesky hive beetles. Chase
     them out!"
   minGameUIBackGround: {fileID: 0}
   miniGameScores:
-  - MetricScore: -5
+  - MetricScore: 0
     metricName: 8
     UI_prefab: {fileID: 6174988373078961175, guid: 7b8ddcff966bb3d4f9c4946513913396, type: 3}
     Ui_Instance: {fileID: 0}
-  - MetricScore: 2
+  - MetricScore: 0
     metricName: 7
     UI_prefab: {fileID: 6174988373078961175, guid: 9b74aa63c511bff45962f0251585b0ed, type: 3}
     Ui_Instance: {fileID: 0}

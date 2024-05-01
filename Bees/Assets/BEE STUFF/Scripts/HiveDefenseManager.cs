@@ -54,7 +54,6 @@ public class HiveDefenseManager : MonoBehaviour
             {
                 // set color with i as alpha
                 fadeImage.color = new Color(0, 0, 0, i);
-                print(fadeImage.color.a);
                 fadeText.color = new Color(1,1,1,i);
                 yield return null;
             }

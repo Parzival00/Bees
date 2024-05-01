@@ -13,7 +13,8 @@ public class DefenderBee : MonoBehaviour
     void Start()
     {
         wasp = GameObject.FindGameObjectWithTag("Wasp");
-        navAgent.destination = wasp.transform.position;
+        navAgent.destination = wasp.transform.position - new Vector3(1.5f,0,0);
+        print(navAgent.destination);
     }
 
     // Update is called once per frame
