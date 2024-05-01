@@ -13,12 +13,16 @@ public class DetectShake : MonoBehaviour
     [SerializeField] float maxShakeTime;
     [SerializeField] float detectionRadius;
     float shakeTime = 0;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         _inputData = GetComponent<InputData>();
         player = GameObject.FindGameObjectWithTag("Player").transform.GetChild(3).gameObject;
+        animator = GetComponent<Animator>();
+        animator.SetBool("isFlying", true);
+        animator.SetFloat("Speed", 0);
     }
 
     // Update is called once per frame

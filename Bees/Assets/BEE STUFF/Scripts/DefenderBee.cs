@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,8 +21,17 @@ public class DefenderBee : MonoBehaviour
     {
         if(wasp == null)
         {
-            wasp = GameObject.FindGameObjectWithTag("Wasp");
-            navAgent.destination = wasp.transform.position;
+            try
+            {
+                wasp = GameObject.FindGameObjectWithTag("Wasp");
+                navAgent.destination = wasp.transform.position;
+            }
+            catch(Exception e)
+            {
+                navAgent.destination = transform.position;
+            }
+            
+            
         }
     }
 }

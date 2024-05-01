@@ -16,12 +16,13 @@ MonoBehaviour:
   MiniGameName: Hive Defense
   MiniGameTime: 90
   tutorialWindowTime: 5
-  MiniGameDescription: "o\tWE\u2019RE UNDER ATTACK! The hive can fall to many different
+  MiniGameDescription: "WE\u2019RE UNDER ATTACK! The hive can fall to many different
     things and sometimes bigger and meaner insects try to take the colony down. Help
-    the colony by joining the other bees in taking out the attacker!"
+    the colony by joining the other bees in taking out the attacker! Shake the controllers
+    near the wasp to vibrate in order to heat up defeat it!"
   minGameUIBackGround: {fileID: 0}
   miniGameScores:
-  - MetricScore: 0
+  - MetricScore: 2
     metricName: 7
     UI_prefab: {fileID: 6174988373078961175, guid: 9b74aa63c511bff45962f0251585b0ed, type: 3}
     Ui_Instance: {fileID: 0}
