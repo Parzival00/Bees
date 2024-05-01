@@ -57,7 +57,7 @@ public class BeetleController : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            if(timer >= timeToLayEggs) // spawn the egg if the beetle has taken enough time to lay it
+            if(timer >= timeToLayEggs && MiniGameManager.instance.playStarted) // spawn the egg if the beetle has taken enough time to lay it
             {
                 //spawns egg and decreases score
                 Instantiate(eggPrefab, this.transform.position, Quaternion.identity);
