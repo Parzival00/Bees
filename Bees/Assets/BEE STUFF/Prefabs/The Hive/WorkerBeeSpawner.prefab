@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7862956579123716056
+--- !u!1 &8040288426807282188
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8804784382454478357}
-  - component: {fileID: 3570503279674003564}
+  - component: {fileID: 3871025757645995945}
+  - component: {fileID: 8248191989940512078}
   m_Layer: 0
   m_Name: WorkerBeeSpawner
   m_TagString: Untagged
@@ -17,32 +17,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8804784382454478357
+--- !u!4 &3871025757645995945
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7862956579123716056}
+  m_GameObject: {fileID: 8040288426807282188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.35, y: 1.93, z: 4.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3570503279674003564
+--- !u!114 &8248191989940512078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7862956579123716056}
+  m_GameObject: {fileID: 8040288426807282188}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b722e4a7f1bef341babb5884b5821e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   WorkerBeeGO: {fileID: 3995184144640657665, guid: 79eea3c42e9a6c84e802e40d235b66ee, type: 3}
-  spawnInterval: 5
+  spawnInterval: 100
