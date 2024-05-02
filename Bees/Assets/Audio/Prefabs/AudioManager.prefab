@@ -178,12 +178,12 @@ MonoBehaviour:
   musicSource: {fileID: 3405854067595882214}
   SFXSource: {fileID: 8437309098336977182}
   masterMixer: {fileID: 24100000, guid: 371cc44968824614ba3966bc47e073f3, type: 2}
-  menuMusic: {fileID: 8300000, guid: 203fd6c002f13b84f89de31be7fa6bc0, type: 3}
-  pollenMusic: {fileID: 8300000, guid: b7da48c15e710a741842583fac3307c7, type: 3}
-  honeyMusic: {fileID: 8300000, guid: b6891bf38a3df44b29d9271a7acfea03, type: 3}
-  nurseryMusic: {fileID: 8300000, guid: 7c1b7bbc412834d24b0900b6768572e6, type: 3}
-  hiveMusic: {fileID: 8300000, guid: fecae2a77cef6694caa4dd7624c09ef9, type: 3}
-  defenseMusic: {fileID: 8300000, guid: 90eae78e8ce85a849b5b0ca11b2de641, type: 3}
+  menuMusic: {fileID: 8300000, guid: 1dc2788ce0af0434f8881235ec77cc14, type: 3}
+  pollenMusic: {fileID: 8300000, guid: 81d2f94fe5670ea41ac6a3844390b4b7, type: 3}
+  honeyMusic: {fileID: 8300000, guid: d408b610638e83e4690c9bec888d46cb, type: 3}
+  nurseryMusic: {fileID: 8300000, guid: c88cbcb37ae101949be35b78ef7d16a5, type: 3}
+  hiveMusic: {fileID: 8300000, guid: a711aad30afb0eb42992842bb111a828, type: 3}
+  defenseMusic: {fileID: 8300000, guid: 213290a2d1205a745b1602581ef7da61, type: 3}
   hiveBees: {fileID: 8300000, guid: 3d13585ad3e174749b082ddaa5f00153, type: 3}
   hiveEnemies: {fileID: 8300000, guid: c6c4997b22dd22e46913e7b109cf54d8, type: 3}
   itemCollected: {fileID: 8300000, guid: 056663a9758614546bdf31c4fd1876b9, type: 3}
