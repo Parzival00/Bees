@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8325072522692451128
 MonoBehaviour:
@@ -48,6 +48,7 @@ MonoBehaviour:
   currentMiniGame: {fileID: 0}
   allMiniGames:
   - {fileID: 11400000, guid: 95814a846fa1c674099b59fd5b89c931, type: 2}
+  - {fileID: 11400000, guid: cd7e329f0d6027c4aa88bf55396a0ea7, type: 2}
   - {fileID: 11400000, guid: f3878995027e2554d8a9ee6058a4a296, type: 2}
   - {fileID: 11400000, guid: f4b13573a01c0fe4782d2f319c396465, type: 2}
   - {fileID: 11400000, guid: 4ecb780b56d2f3446a8988f8ab7cbb96, type: 2}

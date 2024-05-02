@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.24129018, g: 0.08101462, b: 0.0447471, a: 1}
+  m_IndirectSpecularColor: {r: 0.23998511, g: 0.0806507, b: 0.0447471, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -893,46 +893,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
-      propertyPath: allMiniGames.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
-      propertyPath: allMiniGames.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 95814a846fa1c674099b59fd5b89c931, type: 2}
-    - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
-      propertyPath: allMiniGames.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: cd7e329f0d6027c4aa88bf55396a0ea7, type: 2}
-    - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
-      propertyPath: allMiniGames.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: f3878995027e2554d8a9ee6058a4a296, type: 2}
-    - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
-      propertyPath: allMiniGames.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: f4b13573a01c0fe4782d2f319c396465, type: 2}
-    - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
-      propertyPath: allMiniGames.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: 4ecb780b56d2f3446a8988f8ab7cbb96, type: 2}
-    - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
-      propertyPath: allMiniGames.Array.data[5]
-      value: 
-      objectReference: {fileID: 11400000, guid: 3e19fcf8e906dd94a9579caeb5011d8a, type: 2}
-    - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
-      propertyPath: allMiniGames.Array.data[6]
-      value: 
-      objectReference: {fileID: 11400000, guid: ff020b39956059d458fbbe1d414190af, type: 2}
-    - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
-      propertyPath: allMiniGames.Array.data[7]
-      value: 
-      objectReference: {fileID: 11400000, guid: 450d0a735b71d0848bae0b5d4a1fa514, type: 2}
-    - target: {fileID: 8325072522692451128, guid: 286bb6fa5422ced44b465f64a2134ee2, type: 3}
-      propertyPath: allMiniGames.Array.data[8]
-      value: 
-      objectReference: {fileID: 11400000, guid: 71862bfbc81c4b340bf4a0ce69656f8e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
