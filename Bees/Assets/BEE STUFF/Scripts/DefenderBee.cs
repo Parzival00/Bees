@@ -13,7 +13,7 @@ public class DefenderBee : MonoBehaviour
     void Start()
     {
         wasp = GameObject.FindGameObjectWithTag("Wasp");
-        navAgent.destination = wasp.transform.position - new Vector3(1.5f,0,0);
+        navAgent.destination = wasp.transform.GetChild(1).transform.position;
         print(navAgent.destination);
     }
 
@@ -25,7 +25,7 @@ public class DefenderBee : MonoBehaviour
             try
             {
                 wasp = GameObject.FindGameObjectWithTag("Wasp");
-                navAgent.destination = wasp.transform.position;
+                navAgent.destination = wasp.transform.GetChild(1).transform.position;
             }
             catch(Exception e)
             {

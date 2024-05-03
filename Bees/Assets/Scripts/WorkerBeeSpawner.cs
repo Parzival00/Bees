@@ -8,6 +8,10 @@ public class WorkerBeeSpawner : MonoBehaviour
     public float spawnInterval = 5;
     private float counter;
 
+    private void Start()
+    {
+        SpawnWorkerBee();
+    }
     private void Update()
     {
         counter += Time.deltaTime;

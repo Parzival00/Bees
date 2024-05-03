@@ -16,9 +16,19 @@ public class BeeAnimationManager : MonoBehaviour
         animator.SetBool("isFlying", isFlying);
     }
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        agent = GetComponentInParent<NavMeshAgent>();
+        animator.SetBool("isFlying", isFlying);
+    }
+
     private void FixedUpdate()
     {
-        animator.SetFloat("Speed", agent.velocity.magnitude / agent.speed);
+        if(agent == null && animator != null) 
+            animator.SetFloat("Speed", 0);
+        else if (animator!=null)
+            animator.SetFloat("Speed", agent.velocity.magnitude / agent.speed);
 
     }
 }

@@ -13,6 +13,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -52,6 +64,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
       propertyPath: m_Name
       value: Wasp Variant
@@ -78,26 +94,23 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8806370561839971188}
+      addedObject: {fileID: 1482}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3831550448195541617}
+      addedObject: {fileID: 1458}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -1683040050313591625}
+      addedObject: {fileID: 1436}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -5293330964227817019}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -8374421655690123674}
+      addedObject: {fileID: 1284}
   m_SourcePrefab: {fileID: 100100000, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
 --- !u!1 &4130420613869061014 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cfbb1f0f373c6f4dbbb903897929d7d, type: 3}
   m_PrefabInstance: {fileID: 3860528793983712967}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8806370561839971188
+--- !u!114 &1482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e893bfb761c6f47877739717ce8ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3831550448195541617
+--- !u!114 &1458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,7 +138,7 @@ MonoBehaviour:
   shakeThreshold: 2
   maxShakeTime: 2
   detectionRadius: 3
---- !u!114 &-1683040050313591625
+--- !u!114 &1436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9086a6b91928f4d852926747889b48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &-5293330964227817019
+--- !u!95 &1284
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -158,30 +171,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!54 &-8374421655690123674
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4130420613869061014}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0

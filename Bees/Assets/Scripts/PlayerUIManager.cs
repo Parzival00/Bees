@@ -53,6 +53,11 @@ public class PlayerUIManager : MonoBehaviour
     [ContextMenu("Start Mini Game")]
     public void HideTutorialWindow()
     {
+        if(MiniGameManager.instance.currentMiniGame.name.Equals("8 End Screne"))
+        {
+            Application.Quit();
+        }
+
         audioManager.PlaySFX(audioManager.menuClick);
         TutorialWindow.SetActive(false);
         MiniGameManager.instance.playStarted = true;

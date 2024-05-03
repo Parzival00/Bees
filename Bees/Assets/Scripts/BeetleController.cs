@@ -36,7 +36,7 @@ public class BeetleController : MonoBehaviour
 
         if (Vector3.Distance(transform.position, player.transform.position) <= distanceToKeepFromPlayer) //if within radius of the player, run away
         {
-            //print("running away");
+            print("running away");
             navAgent.destination = escapeLocation;
         }
         else if (Vector3.Distance(transform.position, player.transform.position) >= distanceToKeepFromPlayer * 1.5f)

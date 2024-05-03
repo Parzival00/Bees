@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0 Main Menu
   m_EditorClassIdentifier: 
   musicTrackID: 0
-  MiniGameName: Main Menu
+  MiniGameName: ' '
   MiniGameTime: 0
   tutorialWindowTime: 4
   MiniGameDescription: Bees are a very important part of our environment, but many

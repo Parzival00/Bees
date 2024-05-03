@@ -32,7 +32,7 @@ public class HiveCell : ScoreModifier
         BeeGame_Grab InputItem = other.gameObject.GetComponent<BeeGame_Grab>();
         if (InputItem != null)
         {
-            audioManager.PlaySFX(audioManager.itemCollected);
+            //audioManager.PlaySFX(audioManager.itemCollected);
 
             if (InputItem.being_Held)
             {

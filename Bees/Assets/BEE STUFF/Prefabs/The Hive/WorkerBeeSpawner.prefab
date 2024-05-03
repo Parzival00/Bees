@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WorkerBeeGO: {fileID: 3995184144640657665, guid: 79eea3c42e9a6c84e802e40d235b66ee, type: 3}
-  spawnInterval: 100
+  spawnInterval: 10
