@@ -20,7 +20,43 @@ MonoBehaviour:
     Israel, and Michael Knighten from Kennesaw State University as well as the US
     Army Corps of Engineers at Carter's Lake Museum
   minGameUIBackGround: {fileID: 0}
-  miniGameScores: []
+  miniGameScores:
+  - MetricScore: 0
+    metricName: 0
+    UI_prefab: {fileID: 716788881083554963, guid: 8d965a6df667b384d9889d0f5cdeffdc, type: 3}
+    Ui_Instance: {fileID: 0}
+  - MetricScore: 0
+    metricName: 1
+    UI_prefab: {fileID: 224785159588192422, guid: 265e65fffef4fd24e801007deae69e03, type: 3}
+    Ui_Instance: {fileID: 0}
+  - MetricScore: 0
+    metricName: 2
+    UI_prefab: {fileID: 4566281660081132663, guid: 0caa838bfee512c4fbd6bb2e1b434686, type: 3}
+    Ui_Instance: {fileID: 0}
+  - MetricScore: 0
+    metricName: 3
+    UI_prefab: {fileID: 6335829795918357248, guid: 1028e66edde7bd543b0e8eea845c4c67, type: 3}
+    Ui_Instance: {fileID: 0}
+  - MetricScore: 0
+    metricName: 4
+    UI_prefab: {fileID: 125537850048530365, guid: 96243bfd9003c2b4d9c3e5570f5ae73f, type: 3}
+    Ui_Instance: {fileID: 0}
+  - MetricScore: 0
+    metricName: 5
+    UI_prefab: {fileID: 6820232514027437605, guid: 94bd49ae2ee47594e884a4d58251caf6, type: 3}
+    Ui_Instance: {fileID: 0}
+  - MetricScore: 0
+    metricName: 6
+    UI_prefab: {fileID: 3942436118287145696, guid: 3fed952f2e0e04849a50462625544c8a, type: 3}
+    Ui_Instance: {fileID: 0}
+  - MetricScore: 0
+    metricName: 7
+    UI_prefab: {fileID: 6174988373078961175, guid: 9b74aa63c511bff45962f0251585b0ed, type: 3}
+    Ui_Instance: {fileID: 0}
+  - MetricScore: 0
+    metricName: 8
+    UI_prefab: {fileID: 6174988373078961175, guid: 7b8ddcff966bb3d4f9c4946513913396, type: 3}
+    Ui_Instance: {fileID: 0}
   combCellsSettings:
     CappedCellsPercentage: 0
     HoneyCellsPercentage: 0
